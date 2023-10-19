@@ -81,29 +81,7 @@ const MovieCrewPage = () => {
   const { gotoPage, currentPage, maxPage, currentData } = useSplitArrayIntoPage(crew || [], 20);
 
   return (
-    <div className="mt-3 flex w-full max-w-[1920px] flex-col gap-y-4 px-3 sm:px-3.5 xl:px-4 2xl:px-5">
-      <div ref={ref} />
-      <MediaList items={currentData} itemsType="people" listType="grid" />
-      {maxPage > 1 ? (
-        <div className="mt-7 flex flex-row justify-center">
-          <Pagination
-            // showControls={!isSm}
-            total={maxPage}
-            initialPage={currentPage}
-            // shadow
-            onChange={(page) => {
-              gotoPage(page);
-              ref.current?.scrollIntoView({
-                behavior: 'instant',
-                block: 'center',
-                inline: 'nearest',
-              });
-            }}
-            {...(isSm && { size: 'sm' })}
-          />
-        </div>
-      ) : null}
-    </div>
+    <div className="mt-3 flex w-full max-w-[1920px] flex-col gap-y-4 px-3 sm:px-3.5 xl:px-4 2xl:px-5"></div>
   );
 };
 

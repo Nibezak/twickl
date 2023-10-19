@@ -1043,46 +1043,17 @@ const Settings = () => {
                 >
                   <div className="w-full rounded-large bg-content1 p-5 shadow-lg">
                     <div className="flex flex-col items-center justify-center">
-                      <Image
-                        alt="About Logo"
-                        title="About Logo"
-                        src={LogoFooter}
-                        loaderUrl="/api/image"
-                        width="76px"
-                        height="76px"
-                        radius="full"
-                        placeholder="empty"
-                        responsive={[
-                          {
-                            size: {
-                              width: 76,
-                              height: 76,
-                            },
-                          },
-                        ]}
-                        options={{
-                          contentType: MimeType.WEBP,
-                        }}
-                      />
                       <NavLink
                         to="/"
                         arial-label="home-page"
                         className="bg-gradient-to-tr from-secondary to-primary to-50% bg-clip-text text-3xl font-bold tracking-normal text-transparent focus:outline-none focus:ring-2 focus:ring-focus md:text-4xl"
                       >
-                        SORA
+                        WatchParty
                       </NavLink>
                     </div>
                     <Spacer y={1} />
                     <div className="flex flex-row items-center justify-center space-x-4">
-                      <Link as={RemixLink} to="/design-system">
-                        Design 🎨
-                      </Link>
-                      <Link
-                        isExternal
-                        href="https://raw.githubusercontent.com/Khanhtran47/Sora/master/LICENSE.txt"
-                      >
-                        License 📜
-                      </Link>
+                      <Link href="#">MIT License 📜</Link>
                       <Link href="#">Contact ✉️</Link>
                     </div>
                     <Spacer y={1} />

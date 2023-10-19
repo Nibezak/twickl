@@ -38,7 +38,7 @@ export const loader = async ({ request, params }: LoaderArgs) => {
       recommendations,
       topBilledCast: credits &&
         credits.cast && [...postFetchDataHandler(credits.cast.slice(0, 9), 'people')],
-      directors: credits && credits.crew && credits.crew.filter(({ job }) => job === 'Director'),
+      directors: credits && credits.crew.filter(({ job }) => job === 'Director'),
     },
     {
       headers: {

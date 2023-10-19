@@ -40,7 +40,6 @@ export const genrePages = [
 export const movieTvDetailsPages = [
   { pageName: 'overview', pageLink: '/' },
   { pageName: 'cast', pageLink: '/cast' },
-  { pageName: 'crew', pageLink: '/crew' },
   { pageName: 'videos', pageLink: '/videos' },
   { pageName: 'photos', pageLink: '/photos' },
   { pageName: 'recommendations', pageLink: '/recommendations' },
@@ -63,7 +62,6 @@ export const peopleDetailPages = [
 export const tvSeasonDetailPages = [
   { pageName: 'episodes', pageLink: '/' },
   { pageName: 'cast', pageLink: '/cast' },
-  { pageName: 'crew', pageLink: '/crew' },
   { pageName: 'videos', pageLink: '/videos' },
   { pageName: 'photos', pageLink: '/photos' },
 ];
