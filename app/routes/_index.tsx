@@ -8,12 +8,7 @@ import type { IMedia } from '~/types/media';
 import { getAnimePopular } from '~/services/consumet/anilist/anilist.server';
 import { i18next } from '~/services/i18n';
 import { authenticate } from '~/services/supabase';
-import {
-  getListDiscover,
-  getListMovies,
-  getListPeople,
-  getTrending,
-} from '~/services/tmdb/tmdb.server';
+import { getListDiscover, getListMovies, getTrending } from '~/services/tmdb/tmdb.server';
 import { CACHE_CONTROL } from '~/utils/server/http';
 import { useTypedRouteLoaderData } from '~/hooks/useTypedRouteLoaderData';
 import featuredList from '~/constants/featuredList';
@@ -37,7 +32,7 @@ export const loader = async ({ request }: LoaderArgs) => {
   let page = Number(url.searchParams.get('page'));
   if (!page && (page < 1 || page > 1000)) page = 1;
 
-  const [todayTrending, movies, shows, anime, people] = await Promise.all([
+  const [todayTrending, movies, shows, anime] = await Promise.all([
     getTrending('all', 'day', locale, page),
     getListMovies('popular', locale, page),
     getListDiscover(
@@ -54,7 +49,6 @@ export const loader = async ({ request }: LoaderArgs) => {
       100,
     ),
     getAnimePopular(page, 16),
-    getListPeople('popular', locale, page),
   ]);
 
   return json(
@@ -63,7 +57,6 @@ export const loader = async ({ request }: LoaderArgs) => {
       movies: movies && movies.items && movies.items.slice(0, 16),
       shows: shows && shows.items && shows.items.slice(0, 16),
       popularAnime: anime && (anime.results as IMedia[]),
-      people: people && people.items && people.items.slice(0, 16),
     },
     {
       headers: {
@@ -74,14 +67,14 @@ export const loader = async ({ request }: LoaderArgs) => {
 };
 
 const RootIndex = () => {
-  const { movies, shows, popularAnime, people, todayTrending } = useLoaderData<typeof loader>();
+  const { movies, shows, popularAnime, todayTrending } = useLoaderData<typeof loader>();
   const rootData = useTypedRouteLoaderData('root');
   const location = useLocation();
   const navigate = useNavigate();
   const { t } = useTranslation();
 
-  const onClickViewMore = (type: 'movies' | 'tv-shows' | 'people') => {
-    if (type === 'people') navigate(`/${type}`);
+  const onClickViewMore = (type: 'movies' | 'tv-shows') => {
+    if (type === null) navigate(`/${type}`);
     else navigate(`/${type}/popular`);
   };
 
@@ -144,16 +137,6 @@ const RootIndex = () => {
           listType="slider-card"
           navigationButtons
           onClickViewMore={() => navigate('/lists')}
-          showMoreList
-        />
-        <MediaList
-          items={people}
-          itemsType="people"
-          key="slider-card-popular-people"
-          listName={t('popular-people')}
-          listType="slider-card"
-          navigationButtons
-          onClickViewMore={() => onClickViewMore('people')}
           showMoreList
         />
       </div>

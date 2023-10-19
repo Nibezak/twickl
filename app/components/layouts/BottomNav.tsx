@@ -97,7 +97,7 @@ const BottomNav = (props: IBottomNavProps) => {
         )}
       </NavLink>
       <NavLink
-        to="/discover"
+        to="/discover/movies"
         className={({ isActive }) =>
           bottomNavItemStyles({
             active: isActive,

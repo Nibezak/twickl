@@ -3,11 +3,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Khanhtran47/remix-movie">
-    <img src="app/assets/images/logo_loading.png" alt="Logo" width="80" height="80">
-  </a>
 
-<h2 align="center">SORA</h2>
+<h2 align="center">watchparty</h2>
   <p align="center">
     A web app for exploring, watching movies, tv shows and anime built with Remix and NextUI.
     <br />
@@ -15,7 +12,7 @@
 </div>
 
 > **Warning**
-> This app is a work in progress.
+> This app is a work in progress Any help and contributions will be appreciated.
 > <br/>
 
 <!-- TABLE OF CONTENTS -->
@@ -29,11 +26,6 @@
 </details>
 <br/>
 
-<div align="center">
-  <a href="https://github.com/Khanhtran47/remix-movie">
-    <img src="public/images/screenshot.png" alt="screenshot">
-  </a>
-</div>
 <br/>
 
 <!-- TECH STACK -->
@@ -45,7 +37,7 @@
 - Styled using **TailwindCSS** and **Stitches**
 - **SwiperJS** for touch slider
 - Internationalization using **i18n**
-- Authentication, database using **Supabase**
+- Authentication, database using **Firebase**
 - UI Components built using **Radix UI**
 - Animation using **Framer Motion**
 - State management using **Zustand**
@@ -81,6 +73,6 @@ pnpm dev
 
 ## License
 
-Distributed under the MIT License. See [LICENSE.txt](https://github.com/Khanhtran47/Sora/blob/master/LICENSE.txt) for more information.
+Distributed under the MIT License. See [LICENSE.txt]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -173,17 +173,6 @@ const PeopleDetail = (props: IPeopleDetailProps) => {
           <h5>{t('place-of-birth')}</h5>
           <p>{detail?.place_of_birth}</p>
         </div>
-        <div className="mb-2 flex flex-row items-start justify-start gap-x-6 sm:m-0 sm:w-[70%] sm:flex-col">
-          <h5>{t('also-known-as')}</h5>
-          <p>
-            {detail?.also_known_as?.map((name) => (
-              <>
-                <span key={name}>{name}</span>
-                <br />
-              </>
-            ))}
-          </p>
-        </div>
       </div>
     </>
   );

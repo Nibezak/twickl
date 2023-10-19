@@ -99,14 +99,6 @@ const SearchRoute = () => {
         textOnButton={t('search.action')}
         textPlaceHolder={t('search.placeHolder.people')}
       />
-      <MediaList
-        currentPage={people?.page}
-        items={people?.items}
-        itemsType="people"
-        listName={t('popular-people')}
-        listType="grid"
-        totalPages={people?.totalPages}
-      />
     </motion.div>
   );
 };

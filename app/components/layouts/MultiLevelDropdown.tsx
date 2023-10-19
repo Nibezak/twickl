@@ -402,16 +402,6 @@ const MultiLevelDropdown = (props: IMultiLevelDropdownProps) => {
                     className="flex h-14 w-full flex-row items-center justify-between gap-x-2 p-2 data-[hover=true]:bg-default/[.6]"
                   >
                     {currentDropdownLevel?.showBackButton ? <Arrow direction="left" /> : null}
-                    {currentDropdownLevel?.showAvatar ? (
-                      <Avatar
-                        size="sm"
-                        alt="Avatar"
-                        src={avatar}
-                        color="primary"
-                        radius="full"
-                        isBordered
-                      />
-                    ) : null}
                     {currentDropdownLevel?.showTitle ? (
                       <h6 className="px-3 !text-default-foreground">
                         {currentDropdownLevel?.title}

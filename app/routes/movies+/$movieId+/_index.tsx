@@ -102,36 +102,11 @@ const MovieOverview = () => {
             <h6 className="grow-0 basis-1/3">{t('status')}</h6>
             <p className="grow">{detail?.status}</p>
           </div>
-          <div className="flex w-full flex-row items-start justify-start gap-x-4 sm:flex-col sm:items-start sm:justify-center">
-            <h6 className="grow-0 basis-1/3">{t('production-companies')}</h6>
-            <div className="flex grow flex-col">
-              {detail?.production_companies &&
-                detail.production_companies.map((company) => (
-                  <p key={`network-item-${company.id}`}>{company?.name}</p>
-                ))}
-            </div>
-          </div>
           <div className="flex w-full flex-row items-center justify-start gap-x-4 sm:flex-col sm:items-start sm:justify-center">
             <h6 className="grow-0 basis-1/3">{t('original-language')}</h6>
             <p className="grow">
               {rootData?.languages?.find((lang) => lang.iso_639_1 === detail?.original_language)
                 ?.english_name || detail?.original_language}
-            </p>
-          </div>
-          <div className="flex w-full flex-row items-center justify-start gap-x-4 sm:flex-col sm:items-start sm:justify-center">
-            <h6 className="grow-0 basis-1/3">{t('budget')}</h6>
-            <p className="grow">
-              {detail?.budget
-                ? `$${detail?.budget?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`
-                : '-'}
-            </p>
-          </div>
-          <div className=" flex w-full flex-row items-center justify-start gap-x-4 sm:flex-col sm:items-start sm:justify-center">
-            <h6 className="grow-0 basis-1/3">{t('revenue')}</h6>
-            <p className="grow">
-              {detail?.revenue
-                ? `$${detail?.revenue?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`
-                : '-'}
             </p>
           </div>
         </div>
@@ -153,16 +128,6 @@ const MovieOverview = () => {
                     >
                       {director.name}
                     </Link>
-                  ))}
-                </div>
-              </div>
-            ) : null}
-            {detail?.production_countries && detail.production_countries.length > 0 ? (
-              <div className="flex w-full flex-row items-start justify-start gap-x-4 sm:w-fit sm:flex-col">
-                <h6 className="grow-0 basis-1/3 sm:basis-auto">{t('production-countries')}</h6>
-                <div className="flex grow flex-col">
-                  {detail?.production_countries.map((country, index) => (
-                    <p key={`country-item-${index}`}>{country.name}</p>
                   ))}
                 </div>
               </div>

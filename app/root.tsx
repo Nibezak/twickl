@@ -61,7 +61,6 @@ import swiperThumbsStyles from 'swiper/css/thumbs';
 import Home from './assets/icons/HomeIcon';
 import Refresh from './assets/icons/RefreshIcon';
 import pageNotFound from './assets/images/404.gif';
-import logoLoading from './assets/images/logo_loading.png';
 import { BreadcrumbItem } from './components/elements/Breadcrumb';
 import Layout from './components/layouts/Layout';
 import nProgressStyles from './components/styles/nprogress.css';
@@ -214,8 +213,8 @@ export const loader = async ({ request }: LoaderArgs) => {
 };
 
 export const meta: V2_MetaFunction<typeof loader> = () => [
-  { title: 'Sora' },
-  { name: 'description', content: 'Watching movies, series, anime and more in Sora' },
+  { title: 'Watchparty' },
+  { name: 'description', content: 'Watching movies, series, anime and more in Watchparty' },
   {
     name: 'keywords',
     content:
@@ -561,29 +560,8 @@ const App = () => {
               >
                 <div className="relative top-1/2 m-auto mt-[-77px] block h-0 w-0">
                   <div className="mb-5 flex	items-center justify-center">
-                    <Image
-                      width="100px"
-                      height="100px"
-                      className="mr-5 rounded-full"
-                      title="Logo Loading"
-                      alt="Logo Loading"
-                      src={logoLoading}
-                      placeholder="empty"
-                      responsive={[
-                        {
-                          size: {
-                            width: 100,
-                            height: 100,
-                          },
-                        },
-                      ]}
-                      dprVariants={[1, 3]}
-                      options={{
-                        contentType: MimeType.WEBP,
-                      }}
-                    />
                     <h1 className="bg-gradient-to-tr from-secondary to-primary to-50% bg-clip-text !text-3xl font-bold tracking-normal text-transparent md:!text-5xl">
-                      SORA
+                      WatchParty
                     </h1>
                   </div>
                   <div className="h-9 w-9 animate-spin">

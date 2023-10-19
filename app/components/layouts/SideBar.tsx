@@ -165,38 +165,6 @@ const SideBar = () => {
         >
           <Menu />
         </Button>
-        {sidebarMiniMode.value && !isHovered ? null : (
-          <div className="flex items-center gap-x-3">
-            <Image
-              width="30px"
-              height="30px"
-              radius="full"
-              alt="Logo"
-              src={Logo}
-              placeholder="empty"
-              responsive={[
-                {
-                  size: {
-                    width: 30,
-                    height: 30,
-                  },
-                },
-              ]}
-              loaderUrl="/api/image"
-              dprVariants={[1, 3]}
-              options={{
-                contentType: MimeType.WEBP,
-              }}
-            />
-            <NavLink
-              to="/"
-              arial-label="home-page"
-              className="bg-gradient-to-tr from-secondary to-primary to-50% bg-clip-text text-3xl font-bold tracking-normal text-transparent focus:outline-none focus:ring-2 focus:ring-focus md:text-4xl"
-            >
-              SORA
-            </NavLink>
-          </div>
-        )}
       </div>
       <div
         className={navigationPartStyles({
@@ -319,7 +287,7 @@ const SideBar = () => {
               >
                 <NavigationMenuLink asChild>
                   <NavLink
-                    to="/discover"
+                    to="/discover/movies"
                     className={navigationMenuTriggerStyle({
                       class: `${navigationItemWidthStyle} h-[56px] justify-start transition-[width] duration-200`,
                     })}
@@ -434,30 +402,6 @@ const SideBar = () => {
                           <>
                             <Search className="mr-2 h-5 w-5" filled={isActive} />
                             {t('search-anime')}
-                            <Spinner
-                              size="sm"
-                              classNames={{
-                                base: isPending ? 'ml-auto' : '!hidden',
-                                circle1: 'border-b-default-foreground',
-                                circle2: 'border-b-default-foreground',
-                              }}
-                            />
-                          </>
-                        )}
-                      </NavLink>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                      <NavLink
-                        to="/search/people"
-                        className={navigationMenuTriggerStyle({
-                          class:
-                            'flex h-auto w-[215px] flex-row items-center justify-start px-2 hover:bg-background/[0.6] focus:bg-background/[0.6]',
-                        })}
-                      >
-                        {({ isActive, isPending }) => (
-                          <>
-                            <Search className="mr-2 h-5 w-5" filled={isActive} />
-                            {t('search-people')}
                             <Spinner
                               size="sm"
                               classNames={{
@@ -1064,53 +1008,6 @@ const SideBar = () => {
                   </li>
                 </ul>
               </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem
-              className={`${navigationItemWidthStyle} text-left transition-[width] duration-200`}
-              value="people"
-            >
-              <Tooltip
-                content={t('people')}
-                isDisabled={!sidebarMiniMode.value || (sidebarHoverMode && isHovered)}
-                placement="right"
-                showArrow
-                offset={10}
-              >
-                <NavigationMenuLink asChild>
-                  <NavLink
-                    to="/people"
-                    className={navigationMenuTriggerStyle({
-                      class: `${navigationItemWidthStyle} h-[56px] justify-start transition-[width] duration-200`,
-                    })}
-                  >
-                    {({ isActive, isPending }) => (
-                      <>
-                        <TwoUsers
-                          className={
-                            !sidebarMiniMode.value || (sidebarHoverMode && isHovered) ? 'mr-4' : ''
-                          }
-                          filled={isActive}
-                        />
-                        {!sidebarMiniMode.value || (sidebarHoverMode && isHovered)
-                          ? t('people')
-                          : null}
-                        <Spinner
-                          size="sm"
-                          classNames={{
-                            base:
-                              isPending &&
-                              (!sidebarMiniMode.value || (sidebarHoverMode && isHovered))
-                                ? 'ml-auto'
-                                : '!hidden',
-                            circle1: 'border-b-default-foreground',
-                            circle2: 'border-b-default-foreground',
-                          }}
-                        />
-                      </>
-                    )}
-                  </NavLink>
-                </NavigationMenuLink>
-              </Tooltip>
             </NavigationMenuItem>
             <NavigationMenuItem
               className={`${navigationItemWidthStyle} text-left transition-[width] duration-200`}

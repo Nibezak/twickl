@@ -145,16 +145,6 @@ const TvOverview = () => {
                 </div>
               </div>
             ) : null}
-            {detail?.production_countries && detail.production_countries.length > 0 ? (
-              <div className="flex w-full flex-row items-start justify-start gap-x-4 sm:w-fit sm:flex-col">
-                <h6 className="grow-0 basis-1/3 sm:basis-auto">{t('production-countries')}</h6>
-                <div className="flex grow flex-col">
-                  {detail?.production_countries.map((country, index) => (
-                    <p key={`country-item-${index}`}>{country.name}</p>
-                  ))}
-                </div>
-              </div>
-            ) : null}
             {detail?.spoken_languages && detail.spoken_languages.length > 0 ? (
               <div className="flex w-full flex-row items-start justify-start gap-x-4 sm:w-fit sm:flex-col">
                 <h6 className="grow-0 basis-1/3 sm:basis-auto">{t('spoken-languages')}</h6>

@@ -81,10 +81,6 @@ export const trendingPages = {
     { pageName: 'trending.tv.day', pageLink: '/today' },
     { pageName: 'trending.tv.week', pageLink: '/week' },
   ],
-  people: [
-    { pageName: 'trending.people.day', pageLink: '/today' },
-    { pageName: 'trending.people.week', pageLink: '/week' },
-  ],
 };
 
 export const designSystemPages = [

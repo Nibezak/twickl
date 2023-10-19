@@ -124,16 +124,6 @@ const TrendingRoute = () => {
         onClickViewMore={() => onClickViewMore('anime')}
         showMoreList
       />
-      <MediaList
-        items={todayPeopleTrending}
-        itemsType="people"
-        key="slider-card-trending-today-people"
-        listName={t('trending.people.day')}
-        listType="slider-card"
-        navigationButtons
-        onClickViewMore={() => onClickViewMore('people')}
-        showMoreList
-      />
     </motion.div>
   );
 };
