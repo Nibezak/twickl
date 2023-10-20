@@ -73,9 +73,9 @@ const MobileHeader = () => {
     );
   }
   return (
-    <div className="fixed top-0 z-[1000] flex h-[64px] w-[100vw] flex-row items-center justify-start gap-x-3 px-3 py-2 shadow-none sm:hidden">
+    <div className="fixed top-0 z-[1000] flex h-[64px] w-[100vw] flex-row items-center justify-start gap-x-3 px-3 py-5 shadow-none sm:hidden">
       <motion.div
-        className="absolute left-0 top-0 z-[-1] w-full backdrop-blur-2xl backdrop-contrast-125 backdrop-saturate-200"
+        className="absolute left-0 top-0 z-[-1] w-full backdrop-blur-2xl backdrop-contrast-125 backdrop-saturate-200 "
         style={{
           opacity,
           backgroundColor: headerBackgroundColor,
@@ -83,7 +83,7 @@ const MobileHeader = () => {
         }}
       >
         {customHeaderBackgroundColor ? (
-          <div className="pointer-events-none h-full w-full bg-background/[0.2]" />
+          <div className="pointer-events-none h-full w-full bg-background/[0.2] py-3" />
         ) : null}
       </motion.div>
       <Button variant="faded" radius="full" isIconOnly onPress={() => handleBackButton()}>
@@ -97,9 +97,11 @@ const MobileHeader = () => {
             className="flex flex-col items-start justify-center"
           >
             <div className="flex flex-col items-start justify-center">
-              <span className="line-clamp-1 text-xl font-semibold">{currentMiniTitle.title}</span>
+              <span className="line-clamp-1 text-xl font-semibold pt-2">
+                {currentMiniTitle.title}
+              </span>
               {currentMiniTitle.subtitle ? (
-                <span className="line-clamp-1 text-xs font-medium opacity-75 py-1 pb-2">
+                <span className="line-clamp-1 text-xs font-medium opacity-75 py-1 pb-4">
                   {currentMiniTitle.subtitle}
                 </span>
               ) : null}

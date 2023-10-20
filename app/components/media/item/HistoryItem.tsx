@@ -41,13 +41,11 @@ const HistoryItem = ({ item }: IHistoryItem) => {
             options={{ contentType: MimeType.WEBP }}
             responsive={[{ size: { width: 304, height: 171 } }]}
           />
-          <div className="flex flex-col justify-start p-3">
+          <div className="flex justify-center p-3">
             <h4 className="line-clamp-1">{item?.title}</h4>
-            {item?.season ? (
-              <p className="text-xs font-bold">Season {item.season}&ensp;-&ensp;</p>
-            ) : null}
+            {item?.season ? <p className="text-xs font-bold">S{item.season}&ensp;-&ensp;</p> : null}
             {item?.episode ? (
-              <p className="text-xs font-bold">Episode {item.episode.split('-').at(-1)}</p>
+              <p className="text-xs font-bold">E{item.episode.split('-').at(-1)}</p>
             ) : null}
             <p>{new Date(item?.updated_at.toString()).toLocaleString()}</p>
           </div>

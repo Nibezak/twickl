@@ -172,7 +172,7 @@ const Header: React.FC<IHeaderProps> = (props: IHeaderProps) => {
         }}
       >
         {customHeaderBackgroundColor ? (
-          <div className="pointer-events-none h-full w-full bg-background/[0.2]" />
+          <div className="pointer-events-none h-full w-full bg-background/[0.2] py-3" />
         ) : null}
       </motion.div>
       <ControlNavigation />

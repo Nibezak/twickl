@@ -1053,7 +1053,9 @@ const Settings = () => {
                     <Spacer y={1} />
                     <div className="flex flex-row items-center justify-center space-x-4">
                       <Link href="#">MIT License 📜</Link>
-                      <Link href="#">Contact ✉️</Link>
+                      <Link isExternal={true} href="https://twitter.com/NibezaK">
+                        Contact ✉️
+                      </Link>
                     </div>
                     <Spacer y={1} />
                     <h6 className="text-center !text-default-900">
@@ -1061,10 +1063,8 @@ const Settings = () => {
                       non-affiliated third parties.
                     </h6>
 
-                    <div className="flex flex-row items-center justify-center space-x-4">
-                      <Link href="#">
-                        There are some Easter 🥚 in this program try to find them
-                      </Link>
+                    <div className="flex flex-row items-center justify-center space-x-4 text-xs">
+                      <Link href="#">There are some Easter 🥚 in this program</Link>
                     </div>
                   </div>
                 </motion.div>

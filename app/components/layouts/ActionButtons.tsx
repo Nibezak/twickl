@@ -14,7 +14,7 @@ const ActionButtons = () => {
   return (
     <motion.div
       style={{ opacity, y }}
-      className="fixed bottom-24 right-8 z-[3999] flex flex-col items-center sm:bottom-8"
+      className="fixed bottom-16 right-8 z-[3999] flex flex-col items-center sm:bottom-5"
     >
       <Button
         color="primary"
