@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button } from '@nextui-org/button';
 import { useFetcher, useNavigate } from '@remix-run/react';
 import { useGlobalLoadingState } from 'remix-utils';
 
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import { DialogHeader, DialogTitle } from '~/components/elements/Dialog';
 
 type SelectProviderProps = {
@@ -37,7 +37,7 @@ const SelectProvider = (props: SelectProviderProps) => {
   const fetcher = useFetcher();
   const navigate = useNavigate();
   const globalState = useGlobalLoadingState();
-  const { isShowSkipOpEdButton } = useSoraSettings();
+  const { isShowSkipOpEdButton } = usePartySettings();
   const [provider, setProvider] = useState<
     {
       id?: string | number | null;
@@ -86,10 +86,16 @@ const SelectProvider = (props: SelectProviderProps) => {
     }
   }, [fetcher.data]);
 
+  useEffect(() => {
+    if (provider && Array.isArray(provider) && provider.length > 0) {
+      handleProvider(provider[0]); // Automatically select the first provider
+    }
+  }, [provider]);
+
   return (
     <>
       <DialogHeader>
-        <DialogTitle>Select Provider</DialogTitle>
+        <DialogTitle>Finding a server</DialogTitle>
       </DialogHeader>
       <div className="mt-4 flex w-full flex-col items-center justify-center">
         {provider && Array.isArray(provider)

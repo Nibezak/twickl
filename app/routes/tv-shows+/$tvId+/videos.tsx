@@ -102,22 +102,6 @@ const TvVideosPage = () => {
       id: 'clip',
       activeVideo: 'clip',
     },
-    {
-      id: 'behind_the_scenes',
-      activeVideo: 'behind-the-scenes',
-    },
-    {
-      id: 'bloopers',
-      activeVideo: 'bloopers',
-    },
-    {
-      id: 'featurette',
-      activeVideo: 'featurette',
-    },
-    {
-      id: 'opening_credits',
-      activeVideo: 'opening-credits',
-    },
   ];
   useEffect(() => {
     if (videos) {

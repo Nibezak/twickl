@@ -8,7 +8,7 @@ import { useHydrated } from 'remix-utils';
 import { tv } from 'tailwind-variants';
 
 import type { Title } from '~/types/media';
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import AspectRatio from '~/components/elements/AspectRatio';
 import Image from '~/components/elements/Image';
 
@@ -43,7 +43,7 @@ const BannerItemCompact = forwardRef<HTMLDivElement, IBannerItemCompactProps>(
     const { backdropPath, title, active } = props;
     const { hoverProps, isHovered } = useHover({});
     const isHydrated = useHydrated();
-    const { isPlayTrailer } = useSoraSettings();
+    const { isPlayTrailer } = usePartySettings();
     const titleItem =
       typeof title === 'string'
         ? title

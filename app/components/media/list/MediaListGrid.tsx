@@ -12,7 +12,7 @@ import { tv } from 'tailwind-variants';
 
 import type { IMedia } from '~/types/media';
 import { useLayout } from '~/store/layout/useLayout';
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import Arrow from '~/assets/icons/ArrowIcon';
 
 import MediaItem from '../item';
@@ -76,7 +76,7 @@ const MediaListGrid = (props: IMediaListCardProps) => {
   const [page, setPage] = useState(2);
   const topRef = useRef<HTMLDivElement>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
-  const { listLoadingType, listViewType, isShowTopPagination } = useSoraSettings();
+  const { listLoadingType, listViewType, isShowTopPagination } = usePartySettings();
   const is2Xs = useMediaQuery('(max-width: 320px)', { initializeWithValue: false });
   const isSm = useMediaQuery('(max-width: 650px)', { initializeWithValue: false });
   const currentSearchParams = useMemo<{ [key: string]: string }>(() => {

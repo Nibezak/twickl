@@ -15,7 +15,7 @@ import { tv } from 'tailwind-variants';
 import { useHeaderStyle } from '~/store/layout/useHeaderStyle';
 import { useHistoryStack } from '~/store/layout/useHistoryStack';
 import { useLayout } from '~/store/layout/useLayout';
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import {
   ScrollArea,
   ScrollBar,
@@ -199,7 +199,7 @@ const Layout = (props: ILayout) => {
   const { theme } = useTheme();
   const isSm = useMediaQuery('(max-width: 650px)', { initializeWithValue: false });
   const isMd = useMediaQuery('(max-width: 1280px)', { initializeWithValue: false });
-  const { sidebarMiniMode, sidebarBoxedMode, sidebarHoverMode } = useSoraSettings();
+  const { sidebarMiniMode, sidebarBoxedMode, sidebarHoverMode } = usePartySettings();
   const viewportRef = useRef<HTMLDivElement>(null);
   const {
     setViewportRef,

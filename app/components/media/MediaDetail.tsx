@@ -20,7 +20,7 @@ import { WebShareLink } from '~/utils/client/pwa-utils.client';
 import TMDB from '~/utils/media';
 import { useLayout } from '~/store/layout/useLayout';
 import useColorDarkenLighten from '~/hooks/useColorDarkenLighten';
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import { Dialog, DialogContent, DialogTrigger } from '~/components/elements/Dialog';
 import SelectProvider from '~/components/elements/dialog/SelectProviderDialog';
 import WatchTrailer, { type Trailer } from '~/components/elements/dialog/WatchTrailerDialog';
@@ -605,7 +605,7 @@ export const MediaBackgroundImage = (props: IMediaBackground) => {
   const [size, backgroundRef] = useMeasure<HTMLDivElement>();
   const isHydrated = useHydrated();
   const isSm = useMediaQuery('(max-width: 650px)', { initializeWithValue: false });
-  const { sidebarMiniMode, sidebarBoxedMode } = useSoraSettings();
+  const { sidebarMiniMode, sidebarBoxedMode } = usePartySettings();
   const { scrollY } = useLayout((scrollState) => scrollState);
   const backgroundImageHeight = isSm ? 100 : 300;
   const height = useTransform(

@@ -18,7 +18,7 @@ import { ClientOnly, useHydrated } from 'remix-utils';
 import type { Handle } from '~/types/handle';
 import { getBackgroundTitleBarColor, setMetaThemeColor } from '~/utils/client/meta-tags.client';
 import useColorDarkenLighten from '~/hooks/useColorDarkenLighten';
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import { useTypedRouteLoaderData } from '~/hooks/useTypedRouteLoaderData';
 import languages from '~/constants/languages';
 import {
@@ -271,7 +271,7 @@ const Settings = () => {
     isLightDarkThemeOnly,
     isFetchLogo,
     isShowSpotlight,
-  } = useSoraSettings();
+  } = usePartySettings();
   const listViewType = useLocalStorageValue('sora_settings-layout-list_view', {
     defaultValue: 'card',
   });
@@ -1061,6 +1061,12 @@ const Settings = () => {
                       This site does not store any files on its server. All contents are provided by
                       non-affiliated third parties.
                     </h6>
+
+                    <div className="flex flex-row items-center justify-center space-x-4">
+                      <Link href="#">
+                        There are some Easter 🥚 in this program try to find them
+                      </Link>
+                    </div>
                   </div>
                 </motion.div>
               </TabsContent>

@@ -5,7 +5,7 @@ import { Spacer } from '@nextui-org/spacer';
 import { Switch } from '@nextui-org/switch';
 import { isMobileOnly } from 'react-device-detect';
 
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import { Dialog, DialogContent, DialogTrigger } from '~/components/elements/Dialog';
 import AddSubtitles from '~/components/elements/dialog/AddSubtitleDialog';
 import SearchSubtitles from '~/components/elements/dialog/SearchSubtitleDialog';
@@ -108,7 +108,7 @@ const PlayerSettings = (props: IPlayerSettingsProps) => {
     currentSubtitleWindowColor,
     currentSubtitleWindowOpacity,
     currentSubtitleTextEffects,
-  } = useSoraSettings();
+  } = usePartySettings();
 
   const dropdownLevel = useMemo(
     () => {

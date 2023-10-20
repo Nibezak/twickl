@@ -6,7 +6,7 @@ import { tv } from 'tailwind-variants';
 import { useHeaderStyle } from '~/store/layout/useHeaderStyle';
 import { useLayout } from '~/store/layout/useLayout';
 import { useHeaderOptions } from '~/hooks/useHeader';
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import MultiLevelDropdown from '~/components/layouts/MultiLevelDropdown';
 import ListViewChangeButton from '~/components/elements/shared/ListViewChangeButton';
 
@@ -126,7 +126,7 @@ const backgroundColorStyles = tv({
 
 const Header: React.FC<IHeaderProps> = (props: IHeaderProps) => {
   const { user } = props;
-  const { sidebarMiniMode, sidebarBoxedMode } = useSoraSettings();
+  const { sidebarMiniMode, sidebarBoxedMode } = usePartySettings();
   const { scrollY } = useLayout((state) => state);
   const { startChangeScrollPosition } = useHeaderStyle((state) => state);
   const isHydrated = useHydrated();

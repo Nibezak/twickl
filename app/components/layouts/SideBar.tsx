@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 import { MimeType } from 'remix-image';
 import { tv } from 'tailwind-variants';
 
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import Image from '~/components/elements/Image';
 import {
   NavigationMenu,
@@ -137,7 +137,7 @@ const navigationPartStyles = tv({
 const SideBar = () => {
   const { t } = useTranslation('sidebar');
   const navigate = useNavigate();
-  const { sidebarMiniMode, sidebarHoverMode, sidebarBoxedMode } = useSoraSettings();
+  const { sidebarMiniMode, sidebarHoverMode, sidebarBoxedMode } = usePartySettings();
   const { hoverProps: sidebarHoverProps, isHovered } = useHover({
     isDisabled: !sidebarHoverMode.value,
   });

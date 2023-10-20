@@ -4,7 +4,7 @@ import { toast } from 'sonner';
 
 import { getExt } from '~/utils/file';
 import usePlayerState from '~/store/player/usePlayerState';
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import { DialogFooter, DialogHeader, DialogTitle } from '~/components/elements/Dialog';
 
 interface IAddSubtitlesProps {
@@ -17,7 +17,7 @@ const AddSubtitles = (props: IAddSubtitlesProps) => {
   const [disabledSubmit, setDisabledSubmit] = useState(true);
   const [subtitle, setSubtitle] = useState<File | null>(null);
   const { updateSubtitleSelector } = usePlayerState((state) => state);
-  const { autoSwitchSubtitle } = useSoraSettings();
+  const { autoSwitchSubtitle } = usePartySettings();
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];

@@ -21,7 +21,7 @@ import { useHeaderStyle } from '~/store/layout/useHeaderStyle';
 import { useLayout } from '~/store/layout/useLayout';
 import useColorDarkenLighten from '~/hooks/useColorDarkenLighten';
 import { useCustomHeaderChangePosition } from '~/hooks/useHeader';
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import { tvSeasonDetailPages } from '~/constants/tabLinks';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 import Image from '~/components/elements/Image';
@@ -171,7 +171,7 @@ const TvSeasonDetail = () => {
   const { backgroundColor } = useColorDarkenLighten(color);
   const isSm = useMediaQuery('(max-width: 650px)', { initializeWithValue: false });
   const isXl = useMediaQuery('(max-width: 1280px)', { initializeWithValue: false });
-  const { sidebarBoxedMode } = useSoraSettings();
+  const { sidebarBoxedMode } = usePartySettings();
   const { viewportRef, scrollY } = useLayout((scrollState) => scrollState);
   const { setBackgroundColor, startChangeScrollPosition } = useHeaderStyle(
     (headerState) => headerState,

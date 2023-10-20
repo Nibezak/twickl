@@ -40,7 +40,7 @@ const Player: React.FC<IPlayerProps> = (props: IPlayerProps) => {
     setSubtitleSelector,
   } = usePlayerState((state) => state);
   const [artplayer, setArtplayer] = useState<Artplayer | null>(null);
-  // const { isSwipeFullscreen } = useSoraSettings();
+  // const { isSwipeFullscreen } = usePartySettings();
   const artRef = useRef<HTMLDivElement>(null);
 
   // // eslint-disable-next-line @typescript-eslint/no-unused-vars

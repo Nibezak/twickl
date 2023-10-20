@@ -1,12 +1,12 @@
 import { Button, ButtonGroup } from '@nextui-org/button';
 
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import ViewGridCard from '~/assets/icons/ViewGridCardIcon';
 import ViewGridDetail from '~/assets/icons/ViewGridDetailIcon';
 import ViewGridTable from '~/assets/icons/ViewGridTableIcon';
 
 const ListViewChangeButton = () => {
-  const { listViewType } = useSoraSettings();
+  const { listViewType } = usePartySettings();
   return (
     <ButtonGroup>
       <Button

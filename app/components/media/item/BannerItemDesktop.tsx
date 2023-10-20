@@ -17,7 +17,7 @@ import type { IImage } from '~/services/tmdb/tmdb.types';
 import TMDB from '~/utils/media';
 import useCardHoverStore from '~/store/card/useCardHoverStore';
 import { useLayout } from '~/store/layout/useLayout';
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import AspectRatio from '~/components/elements/AspectRatio';
 import type { Trailer } from '~/components/elements/dialog/WatchTrailerDialog';
 import Image from '~/components/elements/Image';
@@ -80,7 +80,7 @@ const BannerItemDesktop = (props: IBannerItemDesktopProps) => {
   const bannerIntersection = useIntersectionObserver(cardRef, { root: viewportRef });
   const [size, bannerRef] = useMeasure<HTMLDivElement>();
   const isCardPlaying = useCardHoverStore((state) => state.isCardPlaying);
-  const { isMutedTrailer, isPlayTrailer, isFetchLogo, isShowSpotlight } = useSoraSettings();
+  const { isMutedTrailer, isPlayTrailer, isFetchLogo, isShowSpotlight } = usePartySettings();
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
   const mouseRadius = useMotionValue(0);
@@ -511,7 +511,7 @@ const BannerItemDesktop = (props: IBannerItemDesktopProps) => {
                   cc_load_policy: 0,
                   playsinline: 1,
                   mute: 1,
-                  origin: 'https://sorachill.vercel.app',
+                  origin: 'https://wparty.web.app',
                 },
               }}
               onReady={({ target }) => {

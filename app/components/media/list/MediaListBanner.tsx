@@ -5,7 +5,7 @@ import { Autoplay, Pagination, Thumbs, type Swiper } from 'swiper';
 import { Swiper as SwiperReact, SwiperSlide, useSwiper } from 'swiper/react';
 
 import type { IMedia } from '~/types/media';
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import ChevronLeftIcon from '~/assets/icons/ChevronLeftIcon';
 import ChevronRightIcon from '~/assets/icons/ChevronRightIcon';
 import PlayIcon from '~/assets/icons/PlayIcon';
@@ -20,7 +20,7 @@ const CustomNavigation = forwardRef<HTMLDivElement, { slot: 'container-end' }>(
     const swiper = useSwiper();
     const [slideProgress, setSlideProgress] = useState<number>(0);
 
-    const { isPlayTrailer } = useSoraSettings();
+    const { isPlayTrailer } = usePartySettings();
 
     swiper.on('slideChange', (e) => {
       setSlideProgress(e.progress);
@@ -156,7 +156,7 @@ const MediaListBanner = (props: IMediaListBannerProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const progressRef = useRef<HTMLDivElement>(null);
   const autoplayProgressRef = useRef<HTMLDivElement>(null);
-  const { isPlayTrailer } = useSoraSettings();
+  const { isPlayTrailer } = usePartySettings();
 
   useEffect(() => {
     if (

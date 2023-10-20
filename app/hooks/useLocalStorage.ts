@@ -1,6 +1,6 @@
 import { useLocalStorageValue } from '@react-hookz/web';
 
-function useSoraSettings() {
+function usePartySettings() {
   const currentSubtitleFontColor = useLocalStorageValue('sora_settings-subtitle-font_color', {
     defaultValue: 'White',
   });
@@ -39,11 +39,11 @@ function useSoraSettings() {
   //   initializeWithValue: false,
   // });
   const isMutedTrailer = useLocalStorageValue('sora_settings-list-mute_trailer', {
-    defaultValue: true,
-    initializeWithValue: false,
+    defaultValue: false,
+    initializeWithValue: true,
   });
   const isPlayTrailer = useLocalStorageValue('sora_settings-list-play_trailer', {
-    defaultValue: false,
+    defaultValue: true,
     initializeWithValue: false,
   });
   const isFetchLogo = useLocalStorageValue('sora_settings-list-fetch_logo', {
@@ -101,7 +101,7 @@ function useSoraSettings() {
     defaultValue: 'rounded-all',
   });
   const sidebarMiniMode = useLocalStorageValue('sora_settings-layout-sidebar-mini_mode', {
-    defaultValue: false,
+    defaultValue: true,
     initializeWithValue: false,
   });
   const sidebarHoverMode = useLocalStorageValue('sora_settings-layout-sidebar-hover_mode', {
@@ -131,8 +131,8 @@ function useSoraSettings() {
     defaultValue: true,
   });
   const isShowBreadcrumb = useLocalStorageValue('sora_settings-layout-header-show_breadcrumb', {
-    defaultValue: true,
-    initializeWithValue: false,
+    defaultValue: false,
+    initializeWithValue: true,
   });
   const isShowTopPagination = useLocalStorageValue(
     'sora_settings-layout-list-show-top-pagination',
@@ -192,4 +192,4 @@ function useSoraSettings() {
   };
 }
 
-export { useSoraSettings };
+export { usePartySettings };

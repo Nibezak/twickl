@@ -15,7 +15,7 @@ import { useHeaderStyle } from '~/store/layout/useHeaderStyle';
 import { useLayout } from '~/store/layout/useLayout';
 import useColorDarkenLighten from '~/hooks/useColorDarkenLighten';
 import { useCustomHeaderChangePosition } from '~/hooks/useHeader';
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import { animeDetailsPages } from '~/constants/tabLinks';
 import { AnimeDetail, MediaBackgroundImage } from '~/components/media/MediaDetail';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
@@ -103,7 +103,7 @@ const AnimeDetailPage = () => {
   const { state } = useLocation();
   const isHydrated = useHydrated();
   const { backgroundColor } = useColorDarkenLighten(detail?.color);
-  const { sidebarBoxedMode } = useSoraSettings();
+  const { sidebarBoxedMode } = usePartySettings();
   const { viewportRef, scrollY } = useLayout((scrollState) => scrollState);
   const { setBackgroundColor, startChangeScrollPosition } = useHeaderStyle(
     (headerState) => headerState,

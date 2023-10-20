@@ -183,7 +183,7 @@ async function handleFetch(event: FetchEvent): Promise<Response> {
 
 const handlePush = async (event: PushEvent) => {
   const data = JSON.parse(event?.data!.text());
-  const title = data.title ? data.title : 'Sora PWA';
+  const title = data.title ? data.title : 'Watchparty PWA';
 
   const options = {
     body: data.body ? data.body : 'Notification Body Text',

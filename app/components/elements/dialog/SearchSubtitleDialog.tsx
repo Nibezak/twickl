@@ -9,7 +9,7 @@ import { toast } from 'sonner';
 
 import type { ISubtitle, ISubtitlesSearch } from '~/services/open-subtitles/open-subtitles.types';
 import usePlayerState from '~/store/player/usePlayerState';
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import { useTypedRouteLoaderData } from '~/hooks/useTypedRouteLoaderData';
 import { DialogHeader, DialogTitle } from '~/components/elements/Dialog';
 import {
@@ -62,7 +62,7 @@ const SearchSubtitles = (props: ISearchSubtitlesProps) => {
   const [subtitle, setSubtitle] = useState<ISubtitle>();
   const [subtitlesSearch, setSubtitlesSearch] = useState<ISubtitlesSearch>();
   const [isGetSubtitleLink, setIsGetSubtitleLink] = useState<boolean>(false);
-  const { autoSwitchSubtitle } = useSoraSettings();
+  const { autoSwitchSubtitle } = usePartySettings();
 
   const handlePageChange = (page: number) => {
     setSubtitlesSearch(undefined);

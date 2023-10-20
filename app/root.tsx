@@ -527,7 +527,7 @@ const App = () => {
   React.useEffect(() => {
     if (isUpdateAvailable) {
       toast.success('Update Available', {
-        description: 'A new version of Sora is available.',
+        description: 'A new version of Watchparty is available.',
         action: {
           label: 'Update',
           onClick: () => reloadPage(),

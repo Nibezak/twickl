@@ -43,11 +43,6 @@ const BottomNav = (props: IBottomNavProps) => {
 
   const moreNavItems = [
     {
-      name: 'lists',
-      icon: Category,
-      path: '/lists',
-    },
-    {
       name: 'watch-history',
       icon: History,
       path: '/watch-history',

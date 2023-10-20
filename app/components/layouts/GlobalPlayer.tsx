@@ -23,7 +23,7 @@ import tinycolor from 'tinycolor2';
 import updateHistory from '~/utils/client/update-history';
 import { useLayout } from '~/store/layout/useLayout';
 import usePlayerState, { type PlayerData } from '~/store/player/usePlayerState';
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import { Dialog, DialogContent, DialogTrigger } from '~/components/elements/Dialog';
 import WatchTrailer, { type Trailer } from '~/components/elements/dialog/WatchTrailerDialog';
 import Player from '~/components/elements/player/ArtPlayer';
@@ -118,7 +118,7 @@ const GlobalPlayer = () => {
     isAutoSkipOpEd,
     isFastForward,
     isShowSkipOpEdButton,
-  } = useSoraSettings();
+  } = usePartySettings();
   const currentEpisode = useMemo(() => Number(episodeId), [episodeId]);
   const [size, ref] = useMeasure<HTMLDivElement>();
   const constraintsRef = useRef<HTMLDivElement>(null);

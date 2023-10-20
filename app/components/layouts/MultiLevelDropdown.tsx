@@ -13,7 +13,7 @@ import { useHydrated } from 'remix-utils';
 
 import { getBackgroundTitleBarColor, setMetaThemeColor } from '~/utils/client/meta-tags.client';
 import useColorDarkenLighten from '~/hooks/useColorDarkenLighten';
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import { useTypedRouteLoaderData } from '~/hooks/useTypedRouteLoaderData';
 import languages from '~/constants/languages';
 import { listCustomThemeColors, listDefaultThemeColors } from '~/constants/settings';
@@ -42,7 +42,7 @@ const MultiLevelDropdown = (props: IMultiLevelDropdownProps) => {
   const [search] = useSearchParams();
   const [currentLevel, setCurrentLevel] = useState('general');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const { isLightDarkThemeOnly, currentThemeColor } = useSoraSettings();
+  const { isLightDarkThemeOnly, currentThemeColor } = usePartySettings();
   const { isDark } = useColorDarkenLighten();
   const [lottie, setLottie] = useState<AnimationItem>();
   useEffect(() => {

@@ -14,7 +14,7 @@ import type { IMedia, Title } from '~/types/media';
 import type { ITrailer } from '~/services/consumet/anilist/anilist.types';
 // import useCardHoverStore from '~/store/card/useCardHoverStore';
 import { useLayout } from '~/store/layout/useLayout';
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import type { Trailer } from '~/components/elements/dialog/WatchTrailerDialog';
 import Image from '~/components/elements/Image';
 import {
@@ -143,7 +143,7 @@ const CardItem = (props: ICardItemProps) => {
   const navigate = useNavigate();
   const [_trailerCard, setTrailerCard] = useState<Trailer>({});
   const [isTooltipVisible] = useState(false);
-  const { listViewType } = useSoraSettings();
+  const { listViewType } = usePartySettings();
   const [size, imageRef] = useMeasure<HTMLAnchorElement>();
   const { viewportRef } = useLayout((scrollState) => scrollState);
   useEffect(() => {

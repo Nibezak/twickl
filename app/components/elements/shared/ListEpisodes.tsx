@@ -11,7 +11,7 @@ import { MimeType } from 'remix-image';
 import type { IEpisodeInfo } from '~/services/consumet/anilist/anilist.types';
 import type { IEpisode } from '~/services/tmdb/tmdb.types';
 import TMDB from '~/utils/media';
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import useSplitArrayIntoPage from '~/hooks/useSplitArrayIntoPage';
 import episodeTypes from '~/constants/episodeTypes';
 import {
@@ -43,7 +43,7 @@ const ListEpisodes: React.FC<IListEpisodesProps> = (props: IListEpisodesProps) =
   const { type, id, episodes, season, providers } = props;
   const navigate = useNavigate();
   const { t } = useTranslation();
-  const { isShowSkipOpEdButton } = useSoraSettings();
+  const { isShowSkipOpEdButton } = usePartySettings();
   const episodesCountAvailable = useMemo(() => episodes && episodes.length, [episodes]);
   const isSm = useMediaQuery('(max-width: 650px)', { initializeWithValue: false });
   const [selectedProvider, setSelectedProvider] = useState(providers[0]?.provider);

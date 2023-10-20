@@ -9,7 +9,7 @@ import { useHeaderStyle } from '~/store/layout/useHeaderStyle';
 import { useHistoryStack } from '~/store/layout/useHistoryStack';
 import { useLayout } from '~/store/layout/useLayout';
 import { useHeaderOptions } from '~/hooks/useHeader';
-import { useSoraSettings } from '~/hooks/useLocalStorage';
+import { usePartySettings } from '~/hooks/useLocalStorage';
 import { Breadcrumb } from '~/components/elements/Breadcrumb';
 import ChevronLeft from '~/assets/icons/ChevronLeftIcon';
 import ChevronRight from '~/assets/icons/ChevronRightIcon';
@@ -20,7 +20,7 @@ const ControlNavigation = () => {
   const isHydrated = useHydrated();
   const params = useParams();
   const { t } = useTranslation();
-  const { isShowBreadcrumb } = useSoraSettings();
+  const { isShowBreadcrumb } = usePartySettings();
   const { scrollY } = useLayout((state) => state);
   const { startChangeScrollPosition } = useHeaderStyle((state) => state);
   const { currentMiniTitle, customHeaderChangeColorOnScroll } = useHeaderOptions();
