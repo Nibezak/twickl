@@ -140,7 +140,7 @@
   "synonyms": "Synonyms",
   "table": "Table",
   "teaser": "Teaser",
-  "title": "Sora",
+  "title": "WatchParty",
   "title.asc": "Title (A-Z)",
   "title.desc": "Title (Z-A)",
   "title_english": "Title (English)",
@@ -155,7 +155,7 @@
   "trailer": "Trailer",
   "trending": {
     "all": {
-      "day": "Trending All Today",
+      "day": "Trending Today",
       "week": "Trending All This Week"
     },
     "movie": {

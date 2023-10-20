@@ -21,13 +21,13 @@ type ActionData = {
 };
 
 export const meta = mergeMeta(() => [
-  { title: 'Sora - Sign Up' },
-  { name: 'description', content: 'Sign up for a Sora account.' },
-  { property: 'og:title', content: 'Sora - Sign Up' },
-  { property: 'og:description', content: 'Sign up for a Sora account.' },
-  { property: 'og:url', content: 'https://sorachill.vercel.app/sign-up' },
-  { property: 'twitter:title', content: 'Sora - Sign Up' },
-  { property: 'twitter:description', content: 'Sign up for a Sora account.' },
+  { title: 'watchparty - Sign Up' },
+  { name: 'description', content: 'Sign up for a watchparty account.' },
+  { property: 'og:title', content: 'watchparty - Sign Up' },
+  { property: 'og:description', content: 'Sign up for a watchparty account.' },
+  { property: 'og:url', content: 'https://watchpartychill.vercel.app/sign-up' },
+  { property: 'twitter:title', content: 'watchparty - Sign Up' },
+  { property: 'twitter:description', content: 'Sign up for a watchparty account.' },
 ]);
 
 export const action = async ({ request }: ActionArgs) => {
@@ -121,7 +121,7 @@ export const action = async ({ request }: ActionArgs) => {
     {
       type: 'success',
       title: 'Sign Up Successfully',
-      description: 'Welcome to Sora!',
+      description: 'Welcome to watchparty!',
     },
     { headers: { 'Set-Cookie': await commitAuthCookie(authCookie) } },
   );

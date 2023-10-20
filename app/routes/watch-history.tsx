@@ -28,11 +28,11 @@ export const handle: Handle = {
 };
 
 export const meta = mergeMeta(() => [
-  { title: 'Sora - Watch History' },
+  { title: 'watchparty - Watch History' },
   { name: 'description', content: 'Watch History' },
-  { property: 'og:title', content: 'Sora - Watch History' },
+  { property: 'og:title', content: 'watchparty - Watch History' },
   { property: 'og:description', content: 'Watch History' },
-  { name: 'twitter:title', content: 'Sora - Watch History' },
+  { name: 'twitter:title', content: 'watchparty - Watch History' },
   { name: 'twitter:description', content: 'Watch History' },
 ]);
 

@@ -41,30 +41,30 @@ export const meta = mergeMeta<{}, { 'routes/anime+/$animeId': typeof animeIdLoad
     const animeTitle =
       title?.userPreferred || title?.english || title?.romaji || title?.native || '';
     return [
-      { title: `Sora - ${animeTitle} - Episodes` },
+      { title: `watchparty - ${animeTitle} - Episodes` },
       {
         name: 'description',
         content: description
           ? description?.replace(/<\/?[^>]+(>|$)/g, '')
-          : `Watch ${animeTitle} in Sora`,
+          : `Watch ${animeTitle} in watchparty`,
       },
       {
         property: 'og:url',
-        content: `https://sorachill.vercel.app/anime/${params.animeId}/episodes`,
+        content: `https://watchpartychill.vercel.app/anime/${params.animeId}/episodes`,
       },
-      { property: 'og:title', content: `Sora - ${animeTitle} - Episodes` },
+      { property: 'og:title', content: `watchparty - ${animeTitle} - Episodes` },
       {
         property: 'og:description',
         content: description
           ? description?.replace(/<\/?[^>]+(>|$)/g, '')
-          : `Watch ${animeTitle} in Sora`,
+          : `Watch ${animeTitle} in watchparty`,
       },
-      { name: 'twitter:title', content: `Sora - ${animeTitle} - Episodes` },
+      { name: 'twitter:title', content: `watchparty - ${animeTitle} - Episodes` },
       {
         name: 'twitter:description',
         content: description
           ? description?.replace(/<\/?[^>]+(>|$)/g, '')
-          : `Watch ${animeTitle} in Sora`,
+          : `Watch ${animeTitle} in watchparty`,
       },
     ];
   },

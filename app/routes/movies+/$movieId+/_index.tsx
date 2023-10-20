@@ -60,10 +60,13 @@ export const meta = mergeMeta<typeof loader, { 'routes/movies+/$movieId': typeof
     const { detail } = movieData;
     const { title } = detail || {};
     return [
-      { title: `Sora - ${title}` },
-      { property: 'og:title', content: `Sora - ${title}` },
-      { property: 'og:url', content: `https://sorachill.vercel.app/movies/${params.movieId}/` },
-      { property: 'twitter:title', content: `Sora - ${title}` },
+      { title: `watchparty - ${title}` },
+      { property: 'og:title', content: `watchparty - ${title}` },
+      {
+        property: 'og:url',
+        content: `https://watchpartychill.vercel.app/movies/${params.movieId}/`,
+      },
+      { property: 'twitter:title', content: `watchparty - ${title}` },
     ];
   },
 );
@@ -135,9 +138,12 @@ const MovieOverview = () => {
             {detail?.spoken_languages && detail.spoken_languages.length > 0 ? (
               <div className="flex w-full flex-row items-start justify-start gap-x-4 sm:w-fit sm:flex-col">
                 <h6 className="grow-0 basis-1/3 sm:basis-auto">{t('spoken-languages')}</h6>
-                <div className="flex grow flex-col">
+                <div className="flex ">
                   {detail?.spoken_languages.map((language, index) => (
-                    <p key={`language-item-${index}`}>{language.english_name}</p>
+                    <p key={`language-item-${index}`}>
+                      {language.english_name}
+                      <span className="text-xl">✔️ </span>
+                    </p>
                   ))}
                 </div>
               </div>

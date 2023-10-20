@@ -16,12 +16,12 @@ import MediaList from '~/components/media/MediaList';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 
 export const meta = mergeMeta(() => [
-  { title: 'Sora - Popular Movies' },
+  { title: 'watchparty - Popular Movies' },
   { name: 'description', content: 'Popular Movies' },
-  { property: 'og:url', content: 'https://sorachill.vercel.app/movies/popular' },
-  { property: 'og:title', content: 'Sora - Popular Movies' },
+  { property: 'og:url', content: 'https://watchpartychill.vercel.app/movies/popular' },
+  { property: 'og:title', content: 'watchparty - Popular Movies' },
   { property: 'og:description', content: 'Popular Movies' },
-  { name: 'twitter:title', content: 'Sora - Popular Movies' },
+  { name: 'twitter:title', content: 'watchparty - Popular Movies' },
   { name: 'twitter:description', content: 'Popular Movies' },
 ]);
 

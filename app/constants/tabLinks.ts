@@ -40,8 +40,6 @@ export const genrePages = [
 export const movieTvDetailsPages = [
   { pageName: 'overview', pageLink: '/' },
   { pageName: 'cast', pageLink: '/cast' },
-  { pageName: 'videos', pageLink: '/videos' },
-  { pageName: 'photos', pageLink: '/photos' },
   { pageName: 'recommendations', pageLink: '/recommendations' },
   { pageName: 'similar', pageLink: '/similar' },
 ];
@@ -62,8 +60,6 @@ export const peopleDetailPages = [
 export const tvSeasonDetailPages = [
   { pageName: 'episodes', pageLink: '/' },
   { pageName: 'cast', pageLink: '/cast' },
-  { pageName: 'videos', pageLink: '/videos' },
-  { pageName: 'photos', pageLink: '/photos' },
 ];
 
 export const trendingPages = {
@@ -80,30 +76,3 @@ export const trendingPages = {
     { pageName: 'trending.tv.week', pageLink: '/week' },
   ],
 };
-
-export const designSystemPages = [
-  { pageName: 'Colors', pageLink: '/colors' },
-  { pageName: 'Typography', pageLink: '/typography' },
-  { pageName: 'Icons', pageLink: '/icons' },
-  { pageName: 'Avatar', pageLink: '/avatar' },
-  { pageName: 'Accordion', pageLink: '/accordion' },
-  { pageName: 'Badge', pageLink: '/badge' },
-  { pageName: 'Button', pageLink: '/button' },
-  { pageName: 'Card', pageLink: '/card' },
-  { pageName: 'Dialog', pageLink: '/dialog' },
-  { pageName: 'Divider', pageLink: '/divider' },
-  { pageName: 'Image', pageLink: '/image' },
-  { pageName: 'Input', pageLink: '/input' },
-  { pageName: 'Pagination', pageLink: '/pagination' },
-  { pageName: 'Popover', pageLink: '/popover' },
-  { pageName: 'Progress', pageLink: '/progress' },
-  { pageName: 'Scroll Area', pageLink: '/scroll-area' },
-  { pageName: 'Select', pageLink: '/select' },
-  { pageName: 'Skeleton', pageLink: '/skeleton' },
-  { pageName: 'Slider', pageLink: '/slider' },
-  { pageName: 'Switch', pageLink: '/switch' },
-  { pageName: 'Tabs', pageLink: '/tabs' },
-  { pageName: 'Toast', pageLink: '/toast' },
-  { pageName: 'Tooltip', pageLink: '/tooltip' },
-  { pageName: 'Video player', pageLink: '/video-player' },
-];

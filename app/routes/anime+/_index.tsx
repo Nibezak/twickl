@@ -47,13 +47,13 @@ export const loader = async ({ request }: LoaderArgs) => {
 };
 
 export const meta = mergeMeta(() => [
-  { title: 'Sora - Anime' },
-  { name: 'description', content: 'Discover anime in Sora' },
-  { property: 'og:url', content: 'https://sorachill.vercel.app/anime' },
-  { property: 'og:title', content: 'Sora - Anime' },
-  { property: 'og:description', content: 'Discover anime in Sora' },
-  { name: 'twitter:title', content: 'Sora - Anime' },
-  { name: 'twitter:description', content: 'Discover anime in Sora' },
+  { title: 'watchparty - Anime' },
+  { name: 'description', content: 'Discover anime in watchparty' },
+  { property: 'og:url', content: 'https://watchpartychill.vercel.app/anime' },
+  { property: 'og:title', content: 'watchparty - Anime' },
+  { property: 'og:description', content: 'Discover anime in watchparty' },
+  { name: 'twitter:title', content: 'watchparty - Anime' },
+  { name: 'twitter:description', content: 'Discover anime in watchparty' },
 ]);
 
 export const handle: Handle = {

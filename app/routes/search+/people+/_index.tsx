@@ -36,13 +36,13 @@ export const loader = async ({ request }: LoaderArgs) => {
 };
 
 export const meta = mergeMeta(() => [
-  { title: 'Sora - Search People' },
-  { name: 'description', content: 'Search People on Sora' },
-  { property: 'og:url', content: 'https://sorachill.vercel.app/search/people/' },
-  { property: 'og:title', content: 'Sora - Search People' },
-  { property: 'og:description', content: 'Search People on Sora' },
-  { name: 'twitter:title', content: 'Sora - Search People' },
-  { name: 'twitter:description', content: 'Search People on Sora' },
+  { title: 'watchparty - Search People' },
+  { name: 'description', content: 'Search People on watchparty' },
+  { property: 'og:url', content: 'https://watchpartychill.vercel.app/search/people/' },
+  { property: 'og:title', content: 'watchparty - Search People' },
+  { property: 'og:description', content: 'Search People on watchparty' },
+  { name: 'twitter:title', content: 'watchparty - Search People' },
+  { name: 'twitter:description', content: 'Search People on watchparty' },
 ]);
 
 export const handle: Handle = {

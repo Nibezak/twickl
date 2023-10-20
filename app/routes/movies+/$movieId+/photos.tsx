@@ -31,13 +31,13 @@ export const meta = mergeMeta<typeof loader, { 'routes/movies+/$movieId': typeof
     const { title } = detail || {};
     const movieTitle = title || '';
     return [
-      { title: `Sora - ${movieTitle} - Photos` },
+      { title: `watchparty - ${movieTitle} - Photos` },
       {
         property: 'og:url',
-        content: `https://sorachill.vercel.app/movies/${params.movieId}/photos`,
+        content: `https://watchpartychill.vercel.app/movies/${params.movieId}/photos`,
       },
-      { property: 'og:title', content: `Sora - ${movieTitle} - Photos` },
-      { name: 'twitter:title', content: `Sora - ${movieTitle} - Photos` },
+      { property: 'og:title', content: `watchparty - ${movieTitle} - Photos` },
+      { name: 'twitter:title', content: `watchparty - ${movieTitle} - Photos` },
     ];
   },
 );

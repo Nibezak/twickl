@@ -14,12 +14,12 @@ import MediaList from '~/components/media/MediaList';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 
 export const meta = mergeMeta(() => [
-  { title: 'Sora - Trending Anime' },
+  { title: 'watchparty - Trending Anime' },
   { name: 'description', content: 'Trending Anime' },
-  { property: 'og:url', content: 'https://sorachill.vercel.app/anime/trending' },
-  { property: 'og:title', content: 'Sora - Trending Anime' },
+  { property: 'og:url', content: 'https://watchpartychill.vercel.app/anime/trending' },
+  { property: 'og:title', content: 'watchparty - Trending Anime' },
   { property: 'og:description', content: 'Trending Anime' },
-  { name: 'twitter:title', content: 'Sora - Trending Anime' },
+  { name: 'twitter:title', content: 'watchparty - Trending Anime' },
   { name: 'twitter:description', content: 'Trending Anime' },
 ]);
 

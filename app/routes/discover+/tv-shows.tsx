@@ -16,15 +16,15 @@ import MediaList from '~/components/media/MediaList';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 
 export const meta = mergeMeta(() => [
-  { title: 'Sora - Discover tv shows' },
-  { name: 'description', content: 'Discover tv shows on Sora' },
-  { property: 'og:url', content: 'https://sorachill.vercel.app/discover/tv-shows' },
-  { property: 'og:title', content: 'Sora - Discover tv shows' },
-  { property: 'og:image', content: 'https://sorachill.vercel.app/api/ogimage?it=tvshows' },
-  { property: 'og:description', content: 'Discover tv shows on Sora' },
-  { name: 'twitter:title', content: 'Sora - Discover tv shows' },
-  { name: 'twitter:description', content: 'Discover tv shows on Sora' },
-  { name: 'twitter:image', content: 'https://sorachill.vercel.app/api/ogimage?it=tvshows' },
+  { title: 'watchparty - Discover tv shows' },
+  { name: 'description', content: 'Discover tv shows on watchparty' },
+  { property: 'og:url', content: 'https://watchpartychill.vercel.app/discover/tv-shows' },
+  { property: 'og:title', content: 'watchparty - Discover tv shows' },
+  { property: 'og:image', content: 'https://watchpartychill.vercel.app/api/ogimage?it=tvshows' },
+  { property: 'og:description', content: 'Discover tv shows on watchparty' },
+  { name: 'twitter:title', content: 'watchparty - Discover tv shows' },
+  { name: 'twitter:description', content: 'Discover tv shows on watchparty' },
+  { name: 'twitter:image', content: 'https://watchpartychill.vercel.app/api/ogimage?it=tvshows' },
 ]);
 
 export const loader = async ({ request }: LoaderArgs) => {

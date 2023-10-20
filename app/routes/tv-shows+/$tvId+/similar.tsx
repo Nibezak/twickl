@@ -53,13 +53,13 @@ export const meta = mergeMeta<typeof loader, { 'routes/tv-shows+/$tvId': typeof 
     const { detail } = tvData;
     const { name } = detail || {};
     return [
-      { title: `Sora - ${name} - Similar` },
-      { property: 'og:title', content: `Sora - ${name} - Similar` },
+      { title: `watchparty - ${name} - Similar` },
+      { property: 'og:title', content: `watchparty - ${name} - Similar` },
       {
         property: 'og:url',
-        content: `https://sorachill.vercel.app/tv-shows/${params.tvId}/similar`,
+        content: `https://watchpartychill.vercel.app/tv-shows/${params.tvId}/similar`,
       },
-      { property: 'twitter:title', content: `Sora - ${name} - Similar` },
+      { property: 'twitter:title', content: `watchparty - ${name} - Similar` },
     ];
   },
 );

@@ -39,13 +39,16 @@ export const loader = async ({ request, params }: LoaderArgs) => {
 export const meta = mergeMeta(({ data, params }) => {
   const { searchResults } = data;
   return [
-    { title: `Sora - Search results for ${params.tvKeyword}` },
+    { title: `watchparty - Search results for ${params.tvKeyword}` },
     {
       name: 'keywords',
       content: `Watch ${params.tvKeyword}, Stream ${params.tvKeyword}, Watch ${params.tvKeyword} HD, Online ${params.tvKeyword}, Streaming ${params.tvKeyword}, English, Subtitle ${params.tvKeyword}, English Subtitle`,
     },
-    { property: 'og:url', content: `https://sorachill.vercel.app/search/tv/${params.tvKeyword}` },
-    { property: 'og:title', content: `Sora - Search results for ${params.tvKeyword}` },
+    {
+      property: 'og:url',
+      content: `https://watchpartychill.vercel.app/search/tv/${params.tvKeyword}`,
+    },
+    { property: 'og:title', content: `watchparty - Search results for ${params.tvKeyword}` },
     {
       property: 'og:image',
       content: searchResults?.items[0]?.backdropPath || searchResults?.items[0]?.posterPath || '',
@@ -54,7 +57,7 @@ export const meta = mergeMeta(({ data, params }) => {
       name: 'twitter:image',
       content: searchResults?.items[0]?.backdropPath || searchResults?.items[0]?.posterPath || '',
     },
-    { name: 'twitter:title', content: `Sora - Search results for ${params.tvKeyword}` },
+    { name: 'twitter:title', content: `watchparty - Search results for ${params.tvKeyword}` },
   ];
 });
 

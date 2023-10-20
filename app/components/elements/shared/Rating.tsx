@@ -14,7 +14,7 @@ const Rating = (props: IRatingProps) => {
   if (ratingType === 'movie' || ratingType === 'tv') {
     return (
       <div className={cnBase('flex flex-row items-center gap-x-2', className)}>
-        <p className="rounded-large  px-1 text-white">Rating</p>
+        <p className="rounded-large  px-1 text-">⭐</p>
         <p style={color ? { color } : {}}>{rating}</p>
       </div>
     );

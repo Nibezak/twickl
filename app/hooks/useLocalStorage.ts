@@ -1,150 +1,165 @@
 import { useLocalStorageValue } from '@react-hookz/web';
 
 function usePartySettings() {
-  const currentSubtitleFontColor = useLocalStorageValue('sora_settings-subtitle-font_color', {
+  const currentSubtitleFontColor = useLocalStorageValue('watchparty_settings-subtitle-font_color', {
     defaultValue: 'White',
   });
-  const currentSubtitleFontSize = useLocalStorageValue('sora_settings-subtitle-font_size', {
+  const currentSubtitleFontSize = useLocalStorageValue('watchparty_settings-subtitle-font_size', {
     defaultValue: '100%',
   });
   const currentSubtitleBackgroundColor = useLocalStorageValue(
-    'sora_settings-subtitle-background_color',
+    'watchparty_settings-subtitle-background_color',
     {
       defaultValue: 'Black',
     },
   );
   const currentSubtitleBackgroundOpacity = useLocalStorageValue(
-    'sora_settings-subtitle-background_opacity',
+    'watchparty_settings-subtitle-background_opacity',
     {
       defaultValue: '0%',
     },
   );
-  const currentSubtitleWindowColor = useLocalStorageValue('sora_settings-subtitle-window_color', {
-    defaultValue: 'Black',
-  });
+  const currentSubtitleWindowColor = useLocalStorageValue(
+    'watchparty_settings-subtitle-window_color',
+    {
+      defaultValue: 'Black',
+    },
+  );
   const currentSubtitleWindowOpacity = useLocalStorageValue(
-    'sora_settings-subtitle-window_opacity',
+    'watchparty_settings-subtitle-window_opacity',
     {
       defaultValue: '0%',
     },
   );
-  const currentSubtitleTextEffects = useLocalStorageValue('sora_settings-subtitle-text_effect', {
-    defaultValue: 'Outline',
-  });
-  const autoShowSubtitle = useLocalStorageValue('sora_settings-subtitle-auto_show', {
+  const currentSubtitleTextEffects = useLocalStorageValue(
+    'watchparty_settings-subtitle-text_effect',
+    {
+      defaultValue: 'Outline',
+    },
+  );
+  const autoShowSubtitle = useLocalStorageValue('watchparty_settings-subtitle-auto_show', {
     defaultValue: false,
   });
-  // const showFilter = useLocalStorageValue('sora_settings-layout-show-filter', {
+  // const showFilter = useLocalStorageValue('watchparty_settings-layout-show-filter', {
   //   defaultValue: false,
   //   initializeWithValue: false,
   // });
-  const isMutedTrailer = useLocalStorageValue('sora_settings-list-mute_trailer', {
+  const isMutedTrailer = useLocalStorageValue('watchparty_settings-list-mute_trailer', {
     defaultValue: false,
     initializeWithValue: true,
   });
-  const isPlayTrailer = useLocalStorageValue('sora_settings-list-play_trailer', {
+  const isPlayTrailer = useLocalStorageValue('watchparty_settings-list-play_trailer', {
     defaultValue: true,
     initializeWithValue: false,
   });
-  const isFetchLogo = useLocalStorageValue('sora_settings-list-fetch_logo', {
+  const isFetchLogo = useLocalStorageValue('watchparty_settings-list-fetch_logo', {
     defaultValue: false,
   });
-  const isShowSpotlight = useLocalStorageValue('sora_settings-list-show_spotlight', {
+  const isShowSpotlight = useLocalStorageValue('watchparty_settings-list-show_spotlight', {
     defaultValue: false,
   });
-  const isAutoSize = useLocalStorageValue('sora_settings-player-auto_size', {
+  const isAutoSize = useLocalStorageValue('watchparty_settings-player-auto_size', {
     defaultValue: false,
   });
-  const isPicInPic = useLocalStorageValue('sora_settings-player-pic_in_pic', {
+  const isPicInPic = useLocalStorageValue('watchparty_settings-player-pic_in_pic', {
     defaultValue: true,
   });
-  const isMuted = useLocalStorageValue('sora_settings-player-mute', {
+  const isMuted = useLocalStorageValue('watchparty_settings-player-mute', {
     defaultValue: false,
   });
-  const isAutoPlay = useLocalStorageValue('sora_settings-player-auto_play', {
+  const isAutoPlay = useLocalStorageValue('watchparty_settings-player-auto_play', {
     defaultValue: false,
   });
-  const isAutoMini = useLocalStorageValue('sora_settings-player-auto_mini', {
+  const isAutoMini = useLocalStorageValue('watchparty_settings-player-auto_mini', {
     defaultValue: false,
   });
-  const isLoop = useLocalStorageValue('sora_settings-player-loop', {
+  const isLoop = useLocalStorageValue('watchparty_settings-player-loop', {
     defaultValue: false,
   });
-  const isScreenshot = useLocalStorageValue('sora_settings-player-screenshot', {
+  const isScreenshot = useLocalStorageValue('watchparty_settings-player-screenshot', {
     defaultValue: true,
   });
-  const isMiniProgressBar = useLocalStorageValue('sora_settings-player-mini_progress_bar', {
+  const isMiniProgressBar = useLocalStorageValue('watchparty_settings-player-mini_progress_bar', {
     defaultValue: true,
   });
-  const isAutoPlayback = useLocalStorageValue('sora_settings-player-auto_playback', {
+  const isAutoPlayback = useLocalStorageValue('watchparty_settings-player-auto_playback', {
     defaultValue: true,
   });
   const isAutoPlayNextEpisode = useLocalStorageValue(
-    'sora_settings-player-auto_play_next_episode',
+    'watchparty_settings-player-auto_play_next_episode',
     {
       defaultValue: true,
     },
   );
-  const isShowSkipOpEdButton = useLocalStorageValue('sora_settings-player-show_skip_op_ed_button', {
-    defaultValue: true,
-  });
-  const isAutoSkipOpEd = useLocalStorageValue('sora_settings-player-auto_skip_op_ed', {
+  const isShowSkipOpEdButton = useLocalStorageValue(
+    'watchparty_settings-player-show_skip_op_ed_button',
+    {
+      defaultValue: true,
+    },
+  );
+  const isAutoSkipOpEd = useLocalStorageValue('watchparty_settings-player-auto_skip_op_ed', {
     defaultValue: false,
   });
-  const isFastForward = useLocalStorageValue('sora_settings-player-fast_forward', {
+  const isFastForward = useLocalStorageValue('watchparty_settings-player-fast_forward', {
     defaultValue: true,
   });
-  // const isSwipeFullscreen = useLocalStorageValue('sora_settings_player-gestures_swipe-fullscreen', {
+  // const isSwipeFullscreen = useLocalStorageValue('watchparty_settings_player-gestures_swipe-fullscreen', {
   //   defaultValue: false,
   // });
-  const sidebarStyleMode = useLocalStorageValue('sora_settings-layout-sidebar-style_mode', {
+  const sidebarStyleMode = useLocalStorageValue('watchparty_settings-layout-sidebar-style_mode', {
     defaultValue: 'rounded-all',
   });
-  const sidebarMiniMode = useLocalStorageValue('sora_settings-layout-sidebar-mini_mode', {
+  const sidebarMiniMode = useLocalStorageValue('watchparty_settings-layout-sidebar-mini_mode', {
     defaultValue: true,
     initializeWithValue: false,
   });
-  const sidebarHoverMode = useLocalStorageValue('sora_settings-layout-sidebar-hover_mode', {
+  const sidebarHoverMode = useLocalStorageValue('watchparty_settings-layout-sidebar-hover_mode', {
     defaultValue: false,
     initializeWithValue: false,
   });
-  const sidebarBoxedMode = useLocalStorageValue('sora_settings-layout-sidebar-boxed_mode', {
+  const sidebarBoxedMode = useLocalStorageValue('watchparty_settings-layout-sidebar-boxed_mode', {
     defaultValue: false,
     initializeWithValue: false,
   });
-  const sidebarSheetMode = useLocalStorageValue('sora_settings-layout-sidebar-sheet_mode', {
+  const sidebarSheetMode = useLocalStorageValue('watchparty_settings-layout-sidebar-sheet_mode', {
     defaultValue: false,
     initializeWithValue: false,
   });
   const listViewType = useLocalStorageValue<'table' | 'card' | 'detail'>(
-    'sora_settings-layout-list_view',
+    'watchparty_settings-layout-list_view',
     {
       defaultValue: 'card',
       initializeWithValue: false,
     },
   );
-  const listLoadingType = useLocalStorageValue('sora_settings-layout-list-loading_type', {
+  const listLoadingType = useLocalStorageValue('watchparty_settings-layout-list-loading_type', {
     defaultValue: 'pagination',
     initializeWithValue: false,
   });
-  const autoSwitchSubtitle = useLocalStorageValue('sora_settings-subtitle-auto_switch', {
+  const autoSwitchSubtitle = useLocalStorageValue('watchparty_settings-subtitle-auto_switch', {
     defaultValue: true,
   });
-  const isShowBreadcrumb = useLocalStorageValue('sora_settings-layout-header-show_breadcrumb', {
-    defaultValue: false,
-    initializeWithValue: true,
-  });
+  const isShowBreadcrumb = useLocalStorageValue(
+    'watchparty_settings-layout-header-show_breadcrumb',
+    {
+      defaultValue: false,
+      initializeWithValue: true,
+    },
+  );
   const isShowTopPagination = useLocalStorageValue(
-    'sora_settings-layout-list-show-top-pagination',
+    'watchparty_settings-layout-list-show-top-pagination',
     {
       defaultValue: false,
       initializeWithValue: false,
     },
   );
-  const isLightDarkThemeOnly = useLocalStorageValue('sora_settings-layout-theme-light_dark_only', {
-    defaultValue: true,
-  });
-  const currentThemeColor = useLocalStorageValue('sora_settings-layout-theme-color', {
+  const isLightDarkThemeOnly = useLocalStorageValue(
+    'watchparty_settings-layout-theme-light_dark_only',
+    {
+      defaultValue: true,
+    },
+  );
+  const currentThemeColor = useLocalStorageValue('watchparty_settings-layout-theme-color', {
     defaultValue: 'blue',
     initializeWithValue: false,
   });

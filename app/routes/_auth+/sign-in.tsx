@@ -18,13 +18,13 @@ type ActionData = {
 };
 
 export const meta = mergeMeta(() => [
-  { title: 'Sora - Sign In' },
-  { name: 'description', content: 'Sign in to your Sora account.' },
-  { property: 'og:title', content: 'Sora - Sign In' },
-  { property: 'og:description', content: 'Sign in to your Sora account.' },
-  { property: 'og:url', content: 'https://sorachill.vercel.app/sign-in' },
-  { property: 'twitter:title', content: 'Sora - Sign In' },
-  { property: 'twitter:description', content: 'Sign in to your Sora account.' },
+  { title: 'watchparty - Sign In' },
+  { name: 'description', content: 'Sign in to your WatchParty account.' },
+  { property: 'og:title', content: 'watchparty - Sign In' },
+  { property: 'og:description', content: 'Sign in to your watchparty account.' },
+  { property: 'og:url', content: 'https://watchpartychill.vercel.app/sign-in' },
+  { property: 'twitter:title', content: 'watchparty - Sign In' },
+  { property: 'twitter:description', content: 'Sign in to your watchparty account.' },
 ]);
 
 export const action = async ({ request }: ActionArgs) => {

@@ -567,7 +567,7 @@ const BannerItemDesktop = (props: IBannerItemDesktopProps) => {
                   cc_load_policy: 0,
                   playsinline: 1,
                   mute: 1,
-                  origin: 'https://sorachill.vercel.app',
+                  origin: 'https://watchparty.vercel.app',
                 },
               }}
               onReady={({ target }) => {

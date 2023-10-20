@@ -14,13 +14,13 @@ import { useTypedRouteLoaderData } from '~/hooks/useTypedRouteLoaderData';
 import MediaList from '~/components/media/MediaList';
 
 export const meta = mergeMeta(() => [
-  { title: 'Sora - Tv Shows' },
-  { name: 'description', content: 'Discover tv shows in Sora' },
-  { property: 'og:url', content: 'https://sorachill.vercel.app/tv-shows/' },
-  { property: 'og:title', content: 'Sora - Tv Shows' },
-  { property: 'og:description', content: 'Discover tv shows in Sora' },
-  { name: 'twitter:title', content: 'Sora - Tv Shows' },
-  { name: 'twitter:description', content: 'Discover tv shows in Sora' },
+  { title: 'watchparty - Tv Shows' },
+  { name: 'description', content: 'Discover tv shows in watchparty' },
+  { property: 'og:url', content: 'https://watchpartychill.vercel.app/tv-shows/' },
+  { property: 'og:title', content: 'watchparty - Tv Shows' },
+  { property: 'og:description', content: 'Discover tv shows in watchparty' },
+  { name: 'twitter:title', content: 'watchparty - Tv Shows' },
+  { name: 'twitter:description', content: 'Discover tv shows in watchparty' },
 ]);
 
 export const loader = async ({ request }: LoaderArgs) => {

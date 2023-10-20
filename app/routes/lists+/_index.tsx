@@ -14,10 +14,10 @@ import MediaList from '~/components/media/MediaList';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 
 export const meta = mergeMeta(() => [
-  { title: 'Sora - Featured Lists' },
-  { property: 'og:url', content: 'https://sorachill.vercel.app/lists/' },
-  { property: 'og:title', content: 'Sora - Featured Lists' },
-  { name: 'twitter:title', content: 'Sora - Featured Lists' },
+  { title: 'watchparty - Featured Lists' },
+  { property: 'og:url', content: 'https://watchpartychill.vercel.app/lists/' },
+  { property: 'og:title', content: 'watchparty - Featured Lists' },
+  { name: 'twitter:title', content: 'watchparty - Featured Lists' },
 ]);
 
 export const handle: Handle = {

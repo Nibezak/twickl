@@ -46,15 +46,6 @@ const generateSvg = async ({ title, cover }: { title: string; cover: string }) =
           backgroundColor: 'rgba(0,0,0,0.7)',
         }}
       />
-      <img
-        src="https://raw.githubusercontent.com/Khanhtran47/Sora/master/app/assets/images/logo_loading.png"
-        height={150}
-        width={150}
-        alt="logo"
-        style={{
-          borderRadius: '50%',
-        }}
-      />
       <div
         style={{
           backgroundImage:
@@ -178,7 +169,7 @@ const generateMovieSvg = async ({
             marginBottom: 0,
           }}
         >
-          SORA
+          watchparty
         </h3>
         <h4
           style={{

@@ -18,16 +18,19 @@ import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 export const meta = mergeMeta(({ params }) => {
   const { mediaType } = params;
   return [
-    { title: `Sora - Trending ${mediaType} today` },
+    { title: `watchparty - Trending ${mediaType} today` },
     {
       name: 'keywords',
       content: `trending, trending ${mediaType}, trending today, trending ${mediaType} today`,
     },
-    { property: 'og:url', content: `https://sorachill.vercel.app/trending/${mediaType}/today` },
-    { property: 'og:title', content: `Sora - Trending ${mediaType} today` },
+    {
+      property: 'og:url',
+      content: `https://watchpartychill.vercel.app/trending/${mediaType}/today`,
+    },
+    { property: 'og:title', content: `watchparty - Trending ${mediaType} today` },
     { name: 'description', content: `Trending ${mediaType} today` },
     { property: 'og:description', content: `Trending ${mediaType} today` },
-    { name: 'twitter:title', content: `Sora - Trending ${mediaType} today` },
+    { name: 'twitter:title', content: `watchparty - Trending ${mediaType} today` },
     { name: 'twitter:description', content: `Trending ${mediaType} today` },
   ];
 });

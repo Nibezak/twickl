@@ -56,13 +56,13 @@ export const meta = mergeMeta<
   const { detail, seasonDetail } = tvSeasonData;
   const { name } = detail || {};
   return [
-    { title: `Sora - ${name} ${seasonDetail?.name || ''} - Videos` },
+    { title: `watchparty - ${name} ${seasonDetail?.name || ''} - Videos` },
     {
       property: 'og:url',
-      content: `https://sorachill.vercel.app/tv-shows/${params.tvId}/season/${params.seasonId}/videos`,
+      content: `https://watchpartychill.vercel.app/tv-shows/${params.tvId}/season/${params.seasonId}/videos`,
     },
-    { property: 'og:title', content: `Sora - ${name} ${seasonDetail?.name || ''} - Videos` },
-    { name: 'twitter:title', content: `Sora - ${name} ${seasonDetail?.name || ''} - Videos` },
+    { property: 'og:title', content: `watchparty - ${name} ${seasonDetail?.name || ''} - Videos` },
+    { name: 'twitter:title', content: `watchparty - ${name} ${seasonDetail?.name || ''} - Videos` },
   ];
 });
 

@@ -31,8 +31,6 @@ import Search from '~/assets/icons/SearchIcon';
 import Settings from '~/assets/icons/SettingsIcon';
 import TrendingUp from '~/assets/icons/TrendingUpIcon';
 import Tv from '~/assets/icons/TvIcon';
-import TwoUsers from '~/assets/icons/TwoUsersIcon';
-import Logo from '~/assets/images/logo_loading.png';
 
 const sidebarStyles = tv({
   base: 'fixed z-[1999] box-border hidden shrink-0 grow-0 transition-[max-width] duration-400 sm:block',
@@ -165,6 +163,17 @@ const SideBar = () => {
         >
           <Menu />
         </Button>
+        {sidebarMiniMode.value && !isHovered ? null : (
+          <div className="flex items-center gap-x-3">
+            <NavLink
+              to="/"
+              arial-label="home-page"
+              className="bg-gradient-to-tr from-secondary to-primary to-50% bg-clip-text text-xl font-bold tracking-normal text-transparent focus:outline-none focus:ring-2 focus:ring-focus md:text-xl"
+            >
+              WatchParty
+            </NavLink>
+          </div>
+        )}
       </div>
       <div
         className={navigationPartStyles({

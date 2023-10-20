@@ -47,10 +47,13 @@ export const meta = mergeMeta<typeof loader, { 'routes/tv-shows+/$tvId': typeof 
     const { detail } = tvData;
     const { name } = detail || {};
     return [
-      { title: `Sora - ${name} - Crew` },
-      { property: 'og:title', content: `Sora - ${name} - Crew` },
-      { property: 'og:url', content: `https://sorachill.vercel.app/tv-shows/${params.tvId}/crew` },
-      { property: 'twitter:title', content: `Sora - ${name} - Crew` },
+      { title: `watchparty - ${name} - Crew` },
+      { property: 'og:title', content: `watchparty - ${name} - Crew` },
+      {
+        property: 'og:url',
+        content: `https://watchpartychill.vercel.app/tv-shows/${params.tvId}/crew`,
+      },
+      { property: 'twitter:title', content: `watchparty - ${name} - Crew` },
     ];
   },
 );

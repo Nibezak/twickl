@@ -54,7 +54,6 @@ import Play from '~/assets/icons/PlayIcon';
 import SettingsIcon from '~/assets/icons/SettingsIcon';
 import Sun from '~/assets/icons/SunIcon';
 import User from '~/assets/icons/UserIcon';
-import LogoFooter from '~/assets/images/logo_footer.png';
 
 export const meta = mergeMeta(() => [
   { title: 'Settings' },
@@ -272,13 +271,13 @@ const Settings = () => {
     isFetchLogo,
     isShowSpotlight,
   } = usePartySettings();
-  const listViewType = useLocalStorageValue('sora_settings-layout-list_view', {
+  const listViewType = useLocalStorageValue('watchparty_settings-layout-list_view', {
     defaultValue: 'card',
   });
-  const listLoadingType = useLocalStorageValue('sora_settings-layout-list-loading_type', {
+  const listLoadingType = useLocalStorageValue('watchparty_settings-layout-list-loading_type', {
     defaultValue: 'pagination',
   });
-  const currentThemeColor = useLocalStorageValue('sora_settings-layout-theme-color', {
+  const currentThemeColor = useLocalStorageValue('watchparty_settings-layout-theme-color', {
     defaultValue: 'blue',
   });
 

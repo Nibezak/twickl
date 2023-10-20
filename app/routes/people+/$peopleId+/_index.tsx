@@ -24,13 +24,13 @@ export const meta = mergeMeta<null, { 'routes/people+/$peopleId': typeof peopleI
     const { name } = detail || {};
     const peopleTitle = name || '';
     return [
-      { title: `Sora - ${peopleTitle}` },
+      { title: `watchparty - ${peopleTitle}` },
       {
         property: 'og:url',
-        content: `https://sorachill.vercel.app/people/${params.peopleId}/`,
+        content: `https://watchpartychill.vercel.app/people/${params.peopleId}/`,
       },
-      { property: 'og:title', content: `Sora - ${peopleTitle}` },
-      { name: 'twitter:title', content: `Sora - ${peopleTitle}` },
+      { property: 'og:title', content: `watchparty - ${peopleTitle}` },
+      { name: 'twitter:title', content: `watchparty - ${peopleTitle}` },
     ];
   },
 );

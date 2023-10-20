@@ -23,7 +23,6 @@ import Arrow from '~/assets/icons/ArrowIcon';
 import Brush from '~/assets/icons/BrushIcon';
 import GlobalIcon from '~/assets/icons/GlobalIcon';
 import Tick from '~/assets/icons/TickIcon';
-import avatar from '~/assets/images/avatar.png';
 import dropdown from '~/assets/lotties/lottieflow-dropdown-03-0072F5-easey.json';
 
 interface IMultiLevelDropdownProps {

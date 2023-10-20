@@ -47,7 +47,7 @@ export const meta = mergeMeta<typeof loader>(({ data, params }) => {
   const { detail, seasonDetail } = data || {};
   return [
     {
-      title: `Sora - Watch ${detail?.name || ''} season ${params.seasonId || ''} episode ${
+      title: `watchparty - Watch ${detail?.name || ''} season ${params.seasonId || ''} episode ${
         params.episodeId || ''
       }`,
     },
@@ -70,18 +70,18 @@ export const meta = mergeMeta<typeof loader>(({ data, params }) => {
     },
     {
       property: 'og:url',
-      content: `https://sorachill.vercel.app/tv-shows/${params.tvId}/season/${params.seasonId}/episode/${params.episodeId}/watch`,
+      content: `https://watchpartychill.vercel.app/tv-shows/${params.tvId}/season/${params.seasonId}/episode/${params.episodeId}/watch`,
     },
     {
       property: 'og:title',
-      content: `Sora - Watch ${detail?.name || ''} season ${params.seasonId || ''} episode ${
+      content: `watchparty - Watch ${detail?.name || ''} season ${params.seasonId || ''} episode ${
         params.episodeId || ''
       }`,
     },
     { property: 'og:description', content: seasonDetail?.overview || detail?.overview || '' },
     {
       name: 'twitter:title',
-      content: `Sora - Watch ${detail?.name || ''} season ${params.seasonId || ''} episode ${
+      content: `watchparty - Watch ${detail?.name || ''} season ${params.seasonId || ''} episode ${
         params.episodeId || ''
       }`,
     },

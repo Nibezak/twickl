@@ -10,8 +10,8 @@ export const loader = async ({ request }: LoaderArgs) => {
   ]);
   return json(
     {
-      short_name: 'Sora',
-      name: 'Sora',
+      short_name: 'watchparty',
+      name: 'watchparty',
       theme_color: '#0072F5',
       background_color: '#000000',
       display: 'standalone',
@@ -64,21 +64,21 @@ export const loader = async ({ request }: LoaderArgs) => {
           type: 'image/png',
           sizes: '1901x959',
           platform: 'wide',
-          label: 'Homescreen of Sora in darkmode',
+          label: 'Homescreen of watchparty in darkmode',
         },
         {
           src: '/images/screenshot_2.png',
           type: 'image/png',
           sizes: '1280x800',
           platform: 'wide',
-          label: 'Homescreen of Sora in lightmode',
+          label: 'Homescreen of watchparty in lightmode',
         },
         {
           src: '/images/screenshot_3.png',
           type: 'image/png',
           sizes: '482x995',
           platform: 'narrow',
-          label: 'Homescreen of Sora in mobile',
+          label: 'Homescreen of watchparty on mobile',
         },
       ],
       icons: [

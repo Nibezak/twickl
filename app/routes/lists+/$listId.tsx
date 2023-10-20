@@ -26,16 +26,16 @@ export const meta = mergeMeta<typeof loader>(({ data, params }) => {
   }
   const { detail } = data;
   return [
-    { title: `Sora - ${detail?.name || ''}` },
+    { title: `watchparty - ${detail?.name || ''}` },
     { name: 'description', content: `${detail?.description || ''}` },
     { name: 'keywords', content: `${detail?.name || ''}` },
     {
       property: 'og:url',
-      content: `https://sorachill.vercel.app/lists/${params.listId}`,
+      content: `https://watchpartychill.vercel.app/lists/${params.listId}`,
     },
-    { property: 'og:title', content: `Sora - ${detail?.name || ''}` },
+    { property: 'og:title', content: `watchparty - ${detail?.name || ''}` },
     { property: 'og:description', content: `${detail?.description || ''}` },
-    { name: 'twitter:title', content: `Sora - ${detail?.name || ''}` },
+    { name: 'twitter:title', content: `watchparty - ${detail?.name || ''}` },
     { name: 'twitter:description', content: `${detail?.description || ''}` },
   ];
 });

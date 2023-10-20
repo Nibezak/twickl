@@ -16,12 +16,12 @@ import MediaList from '~/components/media/MediaList';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 
 export const meta = mergeMeta(() => [
-  { title: 'Sora - Top Rated Movies' },
+  { title: 'watchparty - Top Rated Movies' },
   { name: 'description', content: 'Top Rated Movies' },
-  { property: 'og:url', content: 'https://sorachill.vercel.app/movies/top-rated' },
-  { property: 'og:title', content: 'Sora - Top Rated Movies' },
+  { property: 'og:url', content: 'https://watchpartychill.vercel.app/movies/top-rated' },
+  { property: 'og:title', content: 'watchparty - Top Rated Movies' },
   { property: 'og:description', content: 'Top Rated Movies' },
-  { name: 'twitter:title', content: 'Sora - Top Rated Movies' },
+  { name: 'twitter:title', content: 'watchparty - Top Rated Movies' },
   { name: 'twitter:description', content: 'Top Rated Movies' },
 ]);
 
