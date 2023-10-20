@@ -31,7 +31,7 @@ export const meta = mergeMeta<typeof loader>(({ data, params }) => {
     { name: 'keywords', content: `${detail?.name || ''}` },
     {
       property: 'og:url',
-      content: `https://watchpartychill.vercel.app/lists/${params.listId}`,
+      content: `https://watchparty.web.app/lists/${params.listId}`,
     },
     { property: 'og:title', content: `watchparty - ${detail?.name || ''}` },
     { property: 'og:description', content: `${detail?.description || ''}` },

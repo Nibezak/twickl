@@ -47,7 +47,7 @@ export const meta = mergeMeta(({ data, params }) => {
     },
     {
       property: 'og:url',
-      content: `https://watchpartychill.vercel.app/search/movie/${params.movieKeyword}`,
+      content: `https://watchparty.web.app/search/movie/${params.movieKeyword}`,
     },
     { property: 'og:title', content: `watchparty - Search results for ${params.movieKeyword}` },
     {

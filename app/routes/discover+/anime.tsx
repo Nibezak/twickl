@@ -16,13 +16,13 @@ import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 export const meta = mergeMeta(() => [
   { title: 'watchparty - Discover anime' },
   { name: 'description', content: 'Discover Anime on watchparty' },
-  { property: 'og:url', content: 'https://watchpartychill.vercel.app/discover/anime' },
+  { property: 'og:url', content: 'https://watchparty.web.app/discover/anime' },
   { property: 'og:title', content: 'watchparty - Discover anime' },
-  { property: 'og:image', content: 'https://watchpartychill.vercel.app/api/ogimage?it=anime' },
+  { property: 'og:image', content: 'https://watchparty.web.app/api/ogimage?it=anime' },
   { property: 'og:description', content: 'Discover Anime on watchparty' },
   { name: 'twitter:title', content: 'watchparty - Discover anime' },
   { name: 'twitter:description', content: 'Discover Anime on watchparty' },
-  { name: 'twitter:image', content: 'https://watchpartychill.vercel.app/api/ogimage?it=anime' },
+  { name: 'twitter:image', content: 'https://watchparty.web.app/api/ogimage?it=anime' },
 ]);
 
 export const loader = async ({ request }: LoaderArgs) => {

@@ -18,7 +18,7 @@ import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 export const meta = mergeMeta(() => [
   { title: 'watchparty - Top Rated Movies' },
   { name: 'description', content: 'Top Rated Movies' },
-  { property: 'og:url', content: 'https://watchpartychill.vercel.app/movies/top-rated' },
+  { property: 'og:url', content: 'https://watchparty.web.app/movies/top-rated' },
   { property: 'og:title', content: 'watchparty - Top Rated Movies' },
   { property: 'og:description', content: 'Top Rated Movies' },
   { name: 'twitter:title', content: 'watchparty - Top Rated Movies' },

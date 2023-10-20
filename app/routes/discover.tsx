@@ -8,13 +8,13 @@ import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 export const meta = mergeMeta(() => [
   { title: 'watchparty - Discover' },
   { name: 'description', content: 'Discover Movies, TV Shows, Anime, People and More' },
-  { property: 'og:url', content: 'https://watchpartychill.vercel.app/discover' },
+  { property: 'og:url', content: 'https://watchparty.web.app/discover' },
   { property: 'og:title', content: 'watchparty - Discover' },
-  { property: 'og:image', content: 'https://watchpartychill.vercel.app/api/ogimage?it=discover' },
+  { property: 'og:image', content: 'https://watchparty.web.app/api/ogimage?it=discover' },
   { property: 'og:description', content: 'Discover Movies, TV Shows, Anime, People and More' },
   { name: 'twitter:title', content: 'watchparty - Discover' },
   { name: 'twitter:description', content: 'Discover Movies, TV Shows, Anime, People and More' },
-  { name: 'twitter:image', content: 'https://watchpartychill.vercel.app/api/ogimage?it=discover' },
+  { name: 'twitter:image', content: 'https://watchparty.web.app/api/ogimage?it=discover' },
 ]);
 
 export const handle: Handle = {

@@ -18,7 +18,7 @@ import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 export const meta = mergeMeta(() => [
   { title: 'watchparty - Now Playing Movies' },
   { name: 'description', content: 'Now Playing Movies' },
-  { property: 'og:url', content: 'https://watchpartychill.vercel.app/movies/now-playing' },
+  { property: 'og:url', content: 'https://watchparty.web.app/movies/now-playing' },
   { property: 'og:title', content: 'watchparty - Now Playing Movies' },
   { property: 'og:description', content: 'Now Playing Movies' },
   { name: 'twitter:title', content: 'watchparty - Now Playing Movies' },

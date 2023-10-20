@@ -18,7 +18,7 @@ import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 export const meta = mergeMeta(() => [
   { title: 'watchparty - Airing Today Tv Shows' },
   { name: 'description', content: 'Airing Today Tv Shows' },
-  { property: 'og:url', content: 'https://watchpartychill.vercel.app/tv-shows/airing-today' },
+  { property: 'og:url', content: 'https://watchparty.web.app/tv-shows/airing-today' },
   { property: 'og:title', content: 'watchparty - Airing Today Tv Shows' },
   { property: 'og:description', content: 'Airing Today Tv Shows' },
   { name: 'twitter:title', content: 'watchparty - Airing Today Tv Shows' },

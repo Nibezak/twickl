@@ -99,7 +99,7 @@ const MobileHeader = () => {
             <div className="flex flex-col items-start justify-center">
               <span className="line-clamp-1 text-xl font-semibold">{currentMiniTitle.title}</span>
               {currentMiniTitle.subtitle ? (
-                <span className="line-clamp-1 text-xs font-medium opacity-75">
+                <span className="line-clamp-1 text-xs font-medium opacity-75 py-1 pb-2">
                   {currentMiniTitle.subtitle}
                 </span>
               ) : null}

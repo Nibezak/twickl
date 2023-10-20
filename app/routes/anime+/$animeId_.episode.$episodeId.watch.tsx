@@ -721,7 +721,7 @@ export const meta = mergeMeta<typeof loader>(({ data, params }) => {
     },
     {
       property: 'og:url',
-      content: `https://watchpartychill.vercel.app/anime/${params.animeId}/episode/${params.episodeId}/watch`,
+      content: `https://watchparty.web.app/anime/${params.animeId}/episode/${params.episodeId}/watch`,
     },
     {
       property: 'og:title',

@@ -16,7 +16,7 @@ import MediaList from '~/components/media/MediaList';
 export const meta = mergeMeta(() => [
   { title: 'watchparty - Tv Shows' },
   { name: 'description', content: 'Discover tv shows in watchparty' },
-  { property: 'og:url', content: 'https://watchpartychill.vercel.app/tv-shows/' },
+  { property: 'og:url', content: 'https://watchparty.web.app/tv-shows/' },
   { property: 'og:title', content: 'watchparty - Tv Shows' },
   { property: 'og:description', content: 'Discover tv shows in watchparty' },
   { name: 'twitter:title', content: 'watchparty - Tv Shows' },

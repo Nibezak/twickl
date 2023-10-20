@@ -50,7 +50,7 @@ export const meta = mergeMeta<null, { 'routes/people+/$peopleId': typeof peopleI
       { title: `watchparty - ${peopleTitle} - Media` },
       {
         property: 'og:url',
-        content: `https://watchpartychill.vercel.app/people/${params.peopleId}/media`,
+        content: `https://watchparty.web.app/people/${params.peopleId}/media`,
       },
       { property: 'og:title', content: `watchparty - ${peopleTitle} - Media` },
       { name: 'twitter:title', content: `watchparty - ${peopleTitle} - Media` },

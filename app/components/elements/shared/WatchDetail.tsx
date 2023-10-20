@@ -143,7 +143,7 @@ const WatchDetail: React.FC<IWatchDetailProps> = (props: IWatchDetailProps) => {
             />
           ) : (
             <div className="z-0 flex aspect-[2/3] h-auto w-[137px] items-center justify-center rounded-medium bg-default lg:w-[158px] xl:w-[173px] 2xl:w-[239px]">
-              <PhotoIcon width={36} height={36} />
+              <PhotoIcon width={26} height={26} />
             </div>
           ))}
         <div className="flex w-full flex-col items-start justify-start gap-y-4">

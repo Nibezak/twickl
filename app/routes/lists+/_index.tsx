@@ -15,7 +15,7 @@ import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 
 export const meta = mergeMeta(() => [
   { title: 'watchparty - Featured Lists' },
-  { property: 'og:url', content: 'https://watchpartychill.vercel.app/lists/' },
+  { property: 'og:url', content: 'https://watchparty.web.app/lists/' },
   { property: 'og:title', content: 'watchparty - Featured Lists' },
   { name: 'twitter:title', content: 'watchparty - Featured Lists' },
 ]);

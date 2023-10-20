@@ -17,7 +17,7 @@ import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 export const meta = mergeMeta(() => [
   { title: 'watchparty - Popular Anime' },
   { name: 'description', content: 'Popular Anime' },
-  { property: 'og:url', content: 'https://watchpartychill.vercel.app/anime/popular' },
+  { property: 'og:url', content: 'https://watchparty.web.app/anime/popular' },
   { property: 'og:title', content: 'watchparty - Popular Anime' },
   { property: 'og:description', content: 'Popular Anime' },
   { name: 'twitter:title', content: 'watchparty - Popular Anime' },

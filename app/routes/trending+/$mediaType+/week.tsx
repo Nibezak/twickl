@@ -25,7 +25,7 @@ export const meta = mergeMeta(({ params }) => {
     },
     {
       property: 'og:url',
-      content: `https://watchpartychill.vercel.app/trending/${mediaType}/week`,
+      content: `https://watchparty.web.app/trending/${mediaType}/week`,
     },
     { property: 'og:title', content: `watchparty - Trending ${mediaType} This Week` },
     { name: 'description', content: `Trending ${mediaType} This Week` },

@@ -26,7 +26,7 @@ export const meta = mergeMeta<
     { title: `watchparty - ${name} ${seasonDetail?.name || ''}` },
     {
       property: 'og:url',
-      content: `https://watchpartychill.vercel.app/tv-shows/${params.tvId}/season/${params.seasonId}/`,
+      content: `https://watchparty.web.app/tv-shows/${params.tvId}/season/${params.seasonId}/`,
     },
     { property: 'og:title', content: `watchparty - ${name} ${seasonDetail?.name || ''}` },
     { name: 'twitter:title', content: `watchparty - ${name} ${seasonDetail?.name || ''}` },

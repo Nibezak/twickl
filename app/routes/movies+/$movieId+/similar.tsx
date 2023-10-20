@@ -55,7 +55,7 @@ export const meta = mergeMeta<typeof loader, { 'routes/movies+/$movieId': typeof
       { title: `watchparty - ${movieTitle} - Similar` },
       {
         property: 'og:url',
-        content: `https://watchpartychill.vercel.app/movies/${params.movieId}/similar`,
+        content: `https://watchparty.web.app/movies/${params.movieId}/similar`,
       },
       { property: 'og:title', content: `watchparty - ${movieTitle} - Similar` },
       { name: 'twitter:title', content: `watchparty - ${movieTitle} - Similar` },

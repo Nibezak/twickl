@@ -25,7 +25,7 @@ export const meta = mergeMeta(() => [
   { name: 'description', content: 'Sign up for a watchparty account.' },
   { property: 'og:title', content: 'watchparty - Sign Up' },
   { property: 'og:description', content: 'Sign up for a watchparty account.' },
-  { property: 'og:url', content: 'https://watchpartychill.vercel.app/sign-up' },
+  { property: 'og:url', content: 'https://watchparty.web.app/sign-up' },
   { property: 'twitter:title', content: 'watchparty - Sign Up' },
   { property: 'twitter:description', content: 'Sign up for a watchparty account.' },
 ]);

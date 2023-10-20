@@ -120,12 +120,12 @@ export const meta = mergeMeta<typeof loader>(({ data, params }) => {
     { name: 'description', content: seasonDetail?.overview || '' },
     {
       property: 'og:url',
-      content: `https://watchpartychill.vercel.app/tv-shows/${params.tvId}/season/${params.seasonId}`,
+      content: `https://watchparty.web.app/tv-shows/${params.tvId}/season/${params.seasonId}`,
     },
     { property: 'og:description', content: seasonDetail?.overview || '' },
     {
       property: 'og:image',
-      content: `https://watchpartychill.vercel.app/api/ogimage?m=${params.tvId}&mt=tv`,
+      content: `https://watchparty.web.app/api/ogimage?m=${params.tvId}&mt=tv`,
     },
     { name: 'twitter:description', content: seasonDetail?.overview || '' },
   ];

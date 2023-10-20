@@ -14,13 +14,13 @@ import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 export const meta = mergeMeta(() => [
   { title: 'watchparty Tv shows - Genres' },
   { name: 'description', content: 'Tv shows Genres' },
-  { property: 'og:url', content: 'https://watchpartychill.vercel.app/genres/tv' },
+  { property: 'og:url', content: 'https://watchparty.web.app/genres/tv' },
   { property: 'og:title', content: 'watchparty Tv shows - Genres' },
-  { property: 'og:image', content: 'https://watchpartychill.vercel.app/api/ogimage?it=tvshows' },
+  { property: 'og:image', content: 'https://watchparty.web.app/api/ogimage?it=tvshows' },
   { property: 'og:description', content: 'Tv shows Genres' },
   { name: 'twitter:title', content: 'watchparty Tv shows - Genres' },
   { name: 'twitter:description', content: 'Tv shows Genres' },
-  { name: 'twitter:image', content: 'https://watchpartychill.vercel.app/api/ogimage?it=tvshows' },
+  { name: 'twitter:image', content: 'https://watchparty.web.app/api/ogimage?it=tvshows' },
 ]);
 
 export const handle: Handle = {

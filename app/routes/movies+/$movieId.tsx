@@ -131,7 +131,7 @@ export const meta = mergeMeta<typeof loader>(({ data, params }) => {
     { name: 'twitter:description', content: overview },
     {
       property: 'og:image',
-      content: `https://watchpartychill.vercel.app/api/ogimage?m=${params.movieId}&mt=movie`,
+      content: `https://watchparty.web.app/api/ogimage?m=${params.movieId}&mt=movie`,
     },
     {
       name: 'keywords',
@@ -139,7 +139,7 @@ export const meta = mergeMeta<typeof loader>(({ data, params }) => {
     },
     {
       name: 'twitter:image',
-      content: `https://watchpartychill.vercel.app/api/ogimage?m=${params.movieId}&mt=movie`,
+      content: `https://watchparty.web.app/api/ogimage?m=${params.movieId}&mt=movie`,
     },
   ];
 });

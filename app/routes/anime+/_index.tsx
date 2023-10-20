@@ -49,7 +49,7 @@ export const loader = async ({ request }: LoaderArgs) => {
 export const meta = mergeMeta(() => [
   { title: 'watchparty - Anime' },
   { name: 'description', content: 'Discover anime in watchparty' },
-  { property: 'og:url', content: 'https://watchpartychill.vercel.app/anime' },
+  { property: 'og:url', content: 'https://watchparty.web.app/anime' },
   { property: 'og:title', content: 'watchparty - Anime' },
   { property: 'og:description', content: 'Discover anime in watchparty' },
   { name: 'twitter:title', content: 'watchparty - Anime' },

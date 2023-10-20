@@ -43,7 +43,7 @@ export const meta = mergeMeta(({ data, params }) => {
     },
     {
       property: 'og:url',
-      content: `https://watchpartychill.vercel.app/search/anime/${params.animeKeyword}`,
+      content: `https://watchparty.web.app/search/anime/${params.animeKeyword}`,
     },
     { property: 'og:title', content: `watchparty - Search results for ${params.animeKeyword}` },
     {

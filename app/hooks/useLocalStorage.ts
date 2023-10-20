@@ -133,7 +133,7 @@ function usePartySettings() {
     },
   );
   const listLoadingType = useLocalStorageValue('watchparty_settings-layout-list-loading_type', {
-    defaultValue: 'pagination',
+    defaultValue: 'infinite-scroll',
     initializeWithValue: false,
   });
   const autoSwitchSubtitle = useLocalStorageValue('watchparty_settings-subtitle-auto_switch', {

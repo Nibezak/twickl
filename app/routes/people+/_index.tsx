@@ -17,13 +17,13 @@ export const meta = mergeMeta(() => [
     content:
       'popular celebrities, popular celebrity, top celebrities, top celebrity, people celebrity, celebrity people, best celebrity, best celebrities, famous celebrity, famous people, celebrity movies, movies by celebrity, celebrity tv shows, tv show celebrities, celebrity television shows, celebrity tv series',
   },
-  { property: 'og:url', content: 'https://watchpartychill.vercel.app/people' },
+  { property: 'og:url', content: 'https://watchparty.web.app/people' },
   { property: 'og:title', content: 'watchparty - Popular People' },
-  { property: 'og:image', content: 'https://watchpartychill.vercel.app/api/ogimage?it=people' },
+  { property: 'og:image', content: 'https://watchparty.web.app/api/ogimage?it=people' },
   { property: 'og:description', content: 'Discover the most popular celebrities on watchparty.' },
   { name: 'twitter:title', content: 'watchparty - Popular People' },
   { name: 'twitter:description', content: 'Discover the most popular celebrities on watchparty.' },
-  { name: 'twitter:image', content: 'https://watchpartychill.vercel.app/api/ogimage?it=people' },
+  { name: 'twitter:image', content: 'https://watchparty.web.app/api/ogimage?it=people' },
 ]);
 
 export const loader = async ({ request }: LoaderArgs) => {

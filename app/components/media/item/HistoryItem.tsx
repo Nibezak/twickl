@@ -43,8 +43,12 @@ const HistoryItem = ({ item }: IHistoryItem) => {
           />
           <div className="flex flex-col justify-start p-3">
             <h4 className="line-clamp-1">{item?.title}</h4>
-            {item?.season ? <p>SS {item.season}&ensp;-&ensp;</p> : null}
-            {item?.episode ? <p>EP {item.episode.split('-').at(-1)}</p> : null}
+            {item?.season ? (
+              <p className="text-xs font-bold">Season {item.season}&ensp;-&ensp;</p>
+            ) : null}
+            {item?.episode ? (
+              <p className="text-xs font-bold">Episode {item.episode.split('-').at(-1)}</p>
+            ) : null}
             <p>{new Date(item?.updated_at.toString()).toLocaleString()}</p>
           </div>
           {watched > 5 ? (

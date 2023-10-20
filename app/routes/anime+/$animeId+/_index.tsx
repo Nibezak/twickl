@@ -35,7 +35,7 @@ export const meta = mergeMeta<{}, { 'routes/anime+/$animeId': typeof animeIdLoad
           ? description?.replace(/<\/?[^>]+(>|$)/g, '')
           : `Watch ${animeTitle} in watchparty`,
       },
-      { property: 'og:url', content: `https://watchpartychill.vercel.app/anime/${params.animeId}` },
+      { property: 'og:url', content: `https://watchparty.web.app/anime/${params.animeId}` },
       { property: 'og:title', content: `watchparty - ${animeTitle}` },
       {
         property: 'og:description',
