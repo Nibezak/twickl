@@ -16,12 +16,12 @@ import MediaList from '~/components/media/MediaList';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 
 export const meta = mergeMeta(() => [
-  { title: 'watchparty - Now Playing Movies' },
+  { title: 'twinkl - Now Playing Movies' },
   { name: 'description', content: 'Now Playing Movies' },
-  { property: 'og:url', content: 'https://watchparty.web.app/movies/now-playing' },
-  { property: 'og:title', content: 'watchparty - Now Playing Movies' },
+  { property: 'og:url', content: 'https://twinkl.web.app/movies/now-playing' },
+  { property: 'og:title', content: 'twinkl - Now Playing Movies' },
   { property: 'og:description', content: 'Now Playing Movies' },
-  { name: 'twitter:title', content: 'watchparty - Now Playing Movies' },
+  { name: 'twitter:title', content: 'twinkl - Now Playing Movies' },
   { name: 'twitter:description', content: 'Now Playing Movies' },
 ]);
 

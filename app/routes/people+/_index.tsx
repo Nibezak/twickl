@@ -10,20 +10,20 @@ import { getListPeople } from '~/services/tmdb/tmdb.server';
 import { CACHE_CONTROL } from '~/utils/server/http';
 
 export const meta = mergeMeta(() => [
-  { title: 'watchparty - Popular People' },
-  { name: 'description', content: 'Discover the most popular celebrities on watchparty.' },
+  { title: 'twinkl - Popular People' },
+  { name: 'description', content: 'Discover the most popular celebrities on twinkl.' },
   {
     name: 'keywords',
     content:
       'popular celebrities, popular celebrity, top celebrities, top celebrity, people celebrity, celebrity people, best celebrity, best celebrities, famous celebrity, famous people, celebrity movies, movies by celebrity, celebrity tv shows, tv show celebrities, celebrity television shows, celebrity tv series',
   },
-  { property: 'og:url', content: 'https://watchparty.web.app/people' },
-  { property: 'og:title', content: 'watchparty - Popular People' },
-  { property: 'og:image', content: 'https://watchparty.web.app/api/ogimage?it=people' },
-  { property: 'og:description', content: 'Discover the most popular celebrities on watchparty.' },
-  { name: 'twitter:title', content: 'watchparty - Popular People' },
-  { name: 'twitter:description', content: 'Discover the most popular celebrities on watchparty.' },
-  { name: 'twitter:image', content: 'https://watchparty.web.app/api/ogimage?it=people' },
+  { property: 'og:url', content: 'https://twinkl.web.app/people' },
+  { property: 'og:title', content: 'twinkl - Popular People' },
+  { property: 'og:image', content: 'https://twinkl.web.app/api/ogimage?it=people' },
+  { property: 'og:description', content: 'Discover the most popular celebrities on twinkl.' },
+  { name: 'twitter:title', content: 'twinkl - Popular People' },
+  { name: 'twitter:description', content: 'Discover the most popular celebrities on twinkl.' },
+  { name: 'twitter:image', content: 'https://twinkl.web.app/api/ogimage?it=people' },
 ]);
 
 export const loader = async ({ request }: LoaderArgs) => {

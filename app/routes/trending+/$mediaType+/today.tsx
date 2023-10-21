@@ -18,19 +18,19 @@ import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 export const meta = mergeMeta(({ params }) => {
   const { mediaType } = params;
   return [
-    { title: `watchparty - Trending ${mediaType} today` },
+    { title: `twinkl - Trending ${mediaType} today` },
     {
       name: 'keywords',
       content: `trending, trending ${mediaType}, trending today, trending ${mediaType} today`,
     },
     {
       property: 'og:url',
-      content: `https://watchparty.web.app/trending/${mediaType}/today`,
+      content: `https://twinkl.web.app/trending/${mediaType}/today`,
     },
-    { property: 'og:title', content: `watchparty - Trending ${mediaType} today` },
+    { property: 'og:title', content: `twinkl - Trending ${mediaType} today` },
     { name: 'description', content: `Trending ${mediaType} today` },
     { property: 'og:description', content: `Trending ${mediaType} today` },
-    { name: 'twitter:title', content: `watchparty - Trending ${mediaType} today` },
+    { name: 'twitter:title', content: `twinkl - Trending ${mediaType} today` },
     { name: 'twitter:description', content: `Trending ${mediaType} today` },
   ];
 });

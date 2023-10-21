@@ -7,7 +7,7 @@ type Handler = (request: Request, remixContext: EntryContext) => Promise<Respons
 export const otherRootRoutes: Record<string, Handler> = {
   '/sitemap.xml': async (request, remixContext) => {
     return generateSitemap(request, remixContext, {
-      siteUrl: 'https://watchparty.web.app',
+      siteUrl: 'https://twinkl.web.app',
       headers: {
         'Cache-Control': `public, max-age=${60 * 5}`,
       },
@@ -30,7 +30,7 @@ export const otherRootRoutes: Record<string, Handler> = {
         { type: 'disallow', value: '/' },
         { type: 'userAgent', value: '*' },
         { type: 'disallow', value: '' },
-        { type: 'sitemap', value: 'https://watchparty.web.app/sitemap.xml' },
+        { type: 'sitemap', value: 'https://twinkl.web.app/sitemap.xml' },
       ],
       {
         appendOnDefaultPolicies: false,

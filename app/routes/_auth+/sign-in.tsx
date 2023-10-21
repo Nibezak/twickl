@@ -18,13 +18,13 @@ type ActionData = {
 };
 
 export const meta = mergeMeta(() => [
-  { title: 'watchparty - Sign In' },
-  { name: 'description', content: 'Sign in to your WatchParty account.' },
-  { property: 'og:title', content: 'watchparty - Sign In' },
-  { property: 'og:description', content: 'Sign in to your watchparty account.' },
-  { property: 'og:url', content: 'https://watchparty.web.app/sign-in' },
-  { property: 'twitter:title', content: 'watchparty - Sign In' },
-  { property: 'twitter:description', content: 'Sign in to your watchparty account.' },
+  { title: 'twinkl - Sign In' },
+  { name: 'description', content: 'Sign in to your twinkl account.' },
+  { property: 'og:title', content: 'twinkl - Sign In' },
+  { property: 'og:description', content: 'Sign in to your twinkl account.' },
+  { property: 'og:url', content: 'https://twinkl.web.app/sign-in' },
+  { property: 'twitter:title', content: 'twinkl - Sign In' },
+  { property: 'twitter:description', content: 'Sign in to your twinkl account.' },
 ]);
 
 export const action = async ({ request }: ActionArgs) => {

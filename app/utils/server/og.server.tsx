@@ -169,7 +169,7 @@ const generateMovieSvg = async ({
             marginBottom: 0,
           }}
         >
-          watchparty
+          twinkl
         </h3>
         <h4
           style={{

@@ -16,15 +16,15 @@ import MediaList from '~/components/media/MediaList';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 
 export const meta = mergeMeta(() => [
-  { title: 'watchparty - Discover movies' },
-  { name: 'description', content: 'Discover Movies on watchparty' },
-  { property: 'og:url', content: 'https://watchparty.web.app/discover/movies' },
-  { property: 'og:title', content: 'watchparty - Discover movies' },
-  { property: 'og:image', content: 'https://watchparty.web.app/api/ogimage?it=movies' },
-  { property: 'og:description', content: 'Discover Movies on watchparty' },
-  { name: 'twitter:title', content: 'watchparty - Discover movies' },
-  { name: 'twitter:description', content: 'Discover Movies on watchparty' },
-  { name: 'twitter:image', content: 'https://watchparty.web.app/api/ogimage?it=movies' },
+  { title: 'twinkl - Discover movies' },
+  { name: 'description', content: 'Discover Movies on twinkl' },
+  { property: 'og:url', content: 'https://twinkl.web.app/discover/movies' },
+  { property: 'og:title', content: 'twinkl - Discover movies' },
+  { property: 'og:image', content: 'https://twinkl.web.app/api/ogimage?it=movies' },
+  { property: 'og:description', content: 'Discover Movies on twinkl' },
+  { name: 'twitter:title', content: 'twinkl - Discover movies' },
+  { name: 'twitter:description', content: 'Discover Movies on twinkl' },
+  { name: 'twitter:image', content: 'https://twinkl.web.app/api/ogimage?it=movies' },
 ]);
 
 export const loader = async ({ request }: LoaderArgs) => {

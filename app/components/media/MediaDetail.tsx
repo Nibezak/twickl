@@ -625,7 +625,7 @@ export const MediaBackgroundImage = (props: IMediaBackground) => {
           size?.width !== undefined
             ? `url(/api/image?src=${encodeURIComponent(
                 backdropPath ||
-                  'https://raw.githubusercontent.com/Khanhtran47/watchparty/master/app/assets/images/background-default.jpg',
+                  'https://raw.githubusercontent.com/Khanhtran47/twinkl/master/app/assets/images/background-default.jpg',
               )}&width=${Math.round(size?.width)}&height=${Math.round(
                 size?.height,
               )}&fit=cover&position=center&background[]=0&background[]=0&background[]=0&background[]=0&quality=80&compressionLevel=9&loop=0&delay=100&crop=null&contentType=image%2Fwebp)`

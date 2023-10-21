@@ -51,13 +51,13 @@ export const meta = mergeMeta<
   const { detail, seasonDetail } = tvSeasonData;
   const { name } = detail || {};
   return [
-    { title: `watchparty - ${name} ${seasonDetail?.name || ''} - Cast` },
+    { title: `twinkl - ${name} ${seasonDetail?.name || ''} - Cast` },
     {
       property: 'og:url',
-      content: `https://watchparty.web.app/tv-shows/${params.tvId}/season/${params.seasonId}/cast`,
+      content: `https://twinkl.web.app/tv-shows/${params.tvId}/season/${params.seasonId}/cast`,
     },
-    { property: 'og:title', content: `watchparty - ${name} ${seasonDetail?.name || ''} - Cast` },
-    { name: 'twitter:title', content: `watchparty - ${name} ${seasonDetail?.name || ''} - Cast` },
+    { property: 'og:title', content: `twinkl - ${name} ${seasonDetail?.name || ''} - Cast` },
+    { name: 'twitter:title', content: `twinkl - ${name} ${seasonDetail?.name || ''} - Cast` },
   ];
 });
 

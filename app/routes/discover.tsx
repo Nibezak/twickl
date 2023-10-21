@@ -6,15 +6,15 @@ import { discoverPages } from '~/constants/tabLinks';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 
 export const meta = mergeMeta(() => [
-  { title: 'watchparty - Discover' },
+  { title: 'twinkl - Discover' },
   { name: 'description', content: 'Discover Movies, TV Shows, Anime, People and More' },
-  { property: 'og:url', content: 'https://watchparty.web.app/discover' },
-  { property: 'og:title', content: 'watchparty - Discover' },
-  { property: 'og:image', content: 'https://watchparty.web.app/api/ogimage?it=discover' },
+  { property: 'og:url', content: 'https://twinkl.web.app/discover' },
+  { property: 'og:title', content: 'twinkl - Discover' },
+  { property: 'og:image', content: 'https://twinkl.web.app/api/ogimage?it=discover' },
   { property: 'og:description', content: 'Discover Movies, TV Shows, Anime, People and More' },
-  { name: 'twitter:title', content: 'watchparty - Discover' },
+  { name: 'twitter:title', content: 'twinkl - Discover' },
   { name: 'twitter:description', content: 'Discover Movies, TV Shows, Anime, People and More' },
-  { name: 'twitter:image', content: 'https://watchparty.web.app/api/ogimage?it=discover' },
+  { name: 'twitter:image', content: 'https://twinkl.web.app/api/ogimage?it=discover' },
 ]);
 
 export const handle: Handle = {

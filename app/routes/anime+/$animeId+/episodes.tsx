@@ -41,30 +41,30 @@ export const meta = mergeMeta<{}, { 'routes/anime+/$animeId': typeof animeIdLoad
     const animeTitle =
       title?.userPreferred || title?.english || title?.romaji || title?.native || '';
     return [
-      { title: `watchparty - ${animeTitle} - Episodes` },
+      { title: `twinkl - ${animeTitle} - Episodes` },
       {
         name: 'description',
         content: description
           ? description?.replace(/<\/?[^>]+(>|$)/g, '')
-          : `Watch ${animeTitle} in watchparty`,
+          : `Watch ${animeTitle} in twinkl`,
       },
       {
         property: 'og:url',
-        content: `https://watchparty.web.app/anime/${params.animeId}/episodes`,
+        content: `https://twinkl.web.app/anime/${params.animeId}/episodes`,
       },
-      { property: 'og:title', content: `watchparty - ${animeTitle} - Episodes` },
+      { property: 'og:title', content: `twinkl - ${animeTitle} - Episodes` },
       {
         property: 'og:description',
         content: description
           ? description?.replace(/<\/?[^>]+(>|$)/g, '')
-          : `Watch ${animeTitle} in watchparty`,
+          : `Watch ${animeTitle} in twinkl`,
       },
-      { name: 'twitter:title', content: `watchparty - ${animeTitle} - Episodes` },
+      { name: 'twitter:title', content: `twinkl - ${animeTitle} - Episodes` },
       {
         name: 'twitter:description',
         content: description
           ? description?.replace(/<\/?[^>]+(>|$)/g, '')
-          : `Watch ${animeTitle} in watchparty`,
+          : `Watch ${animeTitle} in twinkl`,
       },
     ];
   },

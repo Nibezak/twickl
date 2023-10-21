@@ -39,16 +39,16 @@ export const loader = async ({ request, params }: LoaderArgs) => {
 export const meta = mergeMeta(({ data, params }) => {
   const { searchResults } = data;
   return [
-    { title: `watchparty - Search results for ${params.peopleKeyword}` },
+    { title: `twinkl - Search results for ${params.peopleKeyword}` },
     {
       name: 'keywords',
       content: `${params.peopleKeyword}`,
     },
     {
       property: 'og:url',
-      content: `https://watchparty.web.app/search/people/${params.peopleKeyword}`,
+      content: `https://twinkl.web.app/search/people/${params.peopleKeyword}`,
     },
-    { property: 'og:title', content: `watchparty - Search results for ${params.peopleKeyword}` },
+    { property: 'og:title', content: `twinkl - Search results for ${params.peopleKeyword}` },
     {
       property: 'og:image',
       content: searchResults?.items[0]?.posterPath || '',
@@ -57,7 +57,7 @@ export const meta = mergeMeta(({ data, params }) => {
       name: 'twitter:image',
       content: searchResults?.items[0]?.posterPath || '',
     },
-    { name: 'twitter:title', content: `watchparty - Search results for ${params.peopleKeyword}` },
+    { name: 'twitter:title', content: `twinkl - Search results for ${params.peopleKeyword}` },
   ];
 });
 

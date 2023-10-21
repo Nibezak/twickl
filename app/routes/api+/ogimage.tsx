@@ -54,39 +54,39 @@ export async function loader({ request }: LoaderArgs) {
     let cover;
     switch (imageType) {
       case 'home':
-        title = 'watchparty';
+        title = 'twinkl';
         cover =
-          'https://raw.githubusercontent.com/Khanhtran47/watchparty/master/app/assets/images/background-default.jpg';
+          'https://raw.githubusercontent.com/Khanhtran47/twinkl/master/app/assets/images/background-default.jpg';
         break;
       case 'movies':
-        title = 'watchparty Movies';
+        title = 'twinkl Movies';
         cover =
           'https://image.tmdb.org/t/p/w1280_filter(duotone,190235,ad47dd)/lXhgCODAbBXL5buk9yEmTpOoOgR.jpg';
         break;
       case 'tvshows':
-        title = 'watchparty TV Shows';
+        title = 'twinkl TV Shows';
         cover =
           'https://image.tmdb.org/t/p/w1280_filter(duotone,00192f,00baff)/etj8E2o0Bud0HkONVQPjyCkIvpv.jpg';
         break;
       case 'people':
-        title = 'watchparty People';
+        title = 'twinkl People';
         cover =
           'https://image.tmdb.org/t/p/w1280_filter(duotone,190235,ad47dd)/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg';
         break;
       case 'anime':
-        title = 'watchparty Anime';
+        title = 'twinkl Anime';
         cover =
           'https://image.tmdb.org/t/p/w1280_filter(duotone,00192f,00baff)/rqbCbjB19amtOtFQbb3K2lgm2zv.jpg';
         break;
       case 'search':
-        title = 'watchparty Search';
+        title = 'twinkl Search';
         cover =
           'https://image.tmdb.org/t/p/w1280_filter(duotone,00192f,00baff)/Vq4L8A88fNQxBqM27xHtDi4DrL.jpg';
         break;
       default:
-        title = 'watchparty';
+        title = 'twinkl';
         cover =
-          'https://raw.githubusercontent.com/Khanhtran47/watchparty/master/app/assets/images/background-default.jpg';
+          'https://raw.githubusercontent.com/Khanhtran47/twinkl/master/app/assets/images/background-default.jpg';
         break;
     }
 

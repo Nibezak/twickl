@@ -52,13 +52,13 @@ export const meta = mergeMeta<typeof loader, { 'routes/movies+/$movieId': typeof
     const { title } = detail || {};
     const movieTitle = title || '';
     return [
-      { title: `watchparty - ${movieTitle} - Recommendations` },
+      { title: `twinkl - ${movieTitle} - Recommendations` },
       {
         property: 'og:url',
-        content: `https://watchparty.web.app/movies/${params.movieId}/recommendations`,
+        content: `https://twinkl.web.app/movies/${params.movieId}/recommendations`,
       },
-      { property: 'og:title', content: `watchparty - ${movieTitle} - Recommendations` },
-      { name: 'twitter:title', content: `watchparty - ${movieTitle} - Recommendations` },
+      { property: 'og:title', content: `twinkl - ${movieTitle} - Recommendations` },
+      { name: 'twitter:title', content: `twinkl - ${movieTitle} - Recommendations` },
     ];
   },
 );

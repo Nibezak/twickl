@@ -213,25 +213,25 @@ export const loader = async ({ request }: LoaderArgs) => {
 };
 
 export const meta: V2_MetaFunction<typeof loader> = () => [
-  { title: 'Watchparty' },
-  { name: 'description', content: 'Watching movies, series, anime and more in Watchparty' },
+  { title: 'twinkl' },
+  { name: 'description', content: 'Watching movies, series, anime and more in twinkl' },
   {
     name: 'keywords',
     content:
-      'WatchParty, WatchParty Movies, WatchParty Series, WatchParty Anime, WatchParty , watch movies, watch series, watch anime, watch movies online, watch series online, watch anime online, free movies, free series, free anime, free movies online, free series online, free anime online, watch movies free, watch series free, watch anime free, watch movies online free, watch series online free, watch anime online free',
+      'twinkl, twinkl Movies, twinkl Series, twinkl Anime, twinkl , watch movies, watch series, watch anime, watch movies online, watch series online, watch anime online, free movies, free series, free anime, free movies online, free series online, free anime online, watch movies free, watch series free, watch anime free, watch movies online free, watch series online free, watch anime online free',
   },
-  { property: 'og:url', content: 'https://WatchParty.web.app' },
-  { property: 'og:title', content: 'WatchParty' },
-  { property: 'og:image', content: 'https://WatchParty.web.app/api/ogimage?it=home' },
-  { property: 'og:description', content: 'Watching movies, series, anime and more in WatchParty' },
+  { property: 'og:url', content: 'https://twinkl.web.app' },
+  { property: 'og:title', content: 'twinkl' },
+  { property: 'og:image', content: 'https://twinkl.web.app/api/ogimage?it=home' },
+  { property: 'og:description', content: 'Watching movies, series, anime and more in twinkl' },
   { property: 'og:type', content: 'website' },
-  { property: 'og:site_name', content: 'WatchParty' },
+  { property: 'og:site_name', content: 'twinkl' },
   { property: 'og:image:width', content: '1200' },
   { property: 'og:image:height', content: '630' },
   { name: 'twitter:card', content: 'summary_large_image' },
-  { name: 'twitter:site', content: '@WatchParty' },
-  { name: 'twitter:title', content: 'WatchParty' },
-  { name: 'twitter:description', content: 'Watching movies, series, anime and more in WatchParty' },
+  { name: 'twitter:site', content: '@twinkl' },
+  { name: 'twitter:title', content: 'twinkl' },
+  { name: 'twitter:description', content: 'Watching movies, series, anime and more in twinkl' },
 ];
 
 export const handle: Handle = {
@@ -526,7 +526,7 @@ const App = () => {
   React.useEffect(() => {
     if (isUpdateAvailable) {
       toast.success('Update Available', {
-        description: 'A new version of Watchparty is available.',
+        description: 'A new version of twinkl is available.',
         action: {
           label: 'Update',
           onClick: () => reloadPage(),
@@ -560,7 +560,7 @@ const App = () => {
                 <div className="relative top-1/2 m-auto mt-[-77px] block h-0 w-0">
                   <div className="mb-5 flex	items-center justify-center">
                     <h1 className="bg-gradient-to-tr from-secondary to-primary to-50% bg-clip-text !text-3xl font-bold tracking-normal text-transparent md:!text-5xl">
-                      WatchParty
+                      twinkl
                     </h1>
                   </div>
                   <div className="h-9 w-9 animate-spin">

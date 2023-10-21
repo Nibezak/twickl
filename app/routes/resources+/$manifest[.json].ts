@@ -10,8 +10,8 @@ export const loader = async ({ request }: LoaderArgs) => {
   ]);
   return json(
     {
-      short_name: 'watchparty',
-      name: 'watchparty',
+      short_name: 'twinkl',
+      name: 'twinkl',
       theme_color: '#0072F5',
       background_color: '#000000',
       display: 'standalone',

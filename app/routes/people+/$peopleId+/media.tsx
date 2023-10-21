@@ -47,13 +47,13 @@ export const meta = mergeMeta<null, { 'routes/people+/$peopleId': typeof peopleI
     const { name } = detail || {};
     const peopleTitle = name || '';
     return [
-      { title: `watchparty - ${peopleTitle} - Media` },
+      { title: `twinkl - ${peopleTitle} - Media` },
       {
         property: 'og:url',
-        content: `https://watchparty.web.app/people/${params.peopleId}/media`,
+        content: `https://twinkl.web.app/people/${params.peopleId}/media`,
       },
-      { property: 'og:title', content: `watchparty - ${peopleTitle} - Media` },
-      { name: 'twitter:title', content: `watchparty - ${peopleTitle} - Media` },
+      { property: 'og:title', content: `twinkl - ${peopleTitle} - Media` },
+      { name: 'twitter:title', content: `twinkl - ${peopleTitle} - Media` },
     ];
   },
 );

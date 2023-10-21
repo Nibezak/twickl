@@ -712,26 +712,26 @@ export const meta = mergeMeta<typeof loader>(({ data, params }) => {
   const { title, description } = detail || {};
   const animeTitle = title?.userPreferred || title?.english || title?.romaji || title?.native || '';
   return [
-    { title: `watchparty - Watch ${animeTitle} episode ${episodeInfo?.number || ''}` },
+    { title: `twinkl - Watch ${animeTitle} episode ${episodeInfo?.number || ''}` },
     {
       name: 'description',
       content: description
         ? description?.replace(/<\/?[^>]+(>|$)/g, '')
-        : `Watch ${animeTitle} in watchparty`,
+        : `Watch ${animeTitle} in twinkl`,
     },
     {
       property: 'og:url',
-      content: `https://watchparty.web.app/anime/${params.animeId}/episode/${params.episodeId}/watch`,
+      content: `https://twinkl.web.app/anime/${params.animeId}/episode/${params.episodeId}/watch`,
     },
     {
       property: 'og:title',
-      content: `watchparty - Watch ${animeTitle} episode ${episodeInfo?.number || ''}`,
+      content: `twinkl - Watch ${animeTitle} episode ${episodeInfo?.number || ''}`,
     },
     {
       property: 'og:description',
       content: description
         ? description?.replace(/<\/?[^>]+(>|$)/g, '')
-        : `Watch ${animeTitle} in watchparty`,
+        : `Watch ${animeTitle} in twinkl`,
     },
     { property: 'og:image', content: `https://img.anili.st/media/${params.animeId}` },
     {
@@ -741,13 +741,13 @@ export const meta = mergeMeta<typeof loader>(({ data, params }) => {
     { name: 'twitter:image', content: `https://img.anili.st/media/${params.animeId}` },
     {
       name: 'twitter:title',
-      content: `watchparty - Watch ${animeTitle} episode ${episodeInfo?.number || ''}`,
+      content: `twinkl - Watch ${animeTitle} episode ${episodeInfo?.number || ''}`,
     },
     {
       name: 'twitter:description',
       content: description
         ? description?.replace(/<\/?[^>]+(>|$)/g, '')
-        : `Watch ${animeTitle} in watchparty`,
+        : `Watch ${animeTitle} in twinkl`,
     },
   ];
 });

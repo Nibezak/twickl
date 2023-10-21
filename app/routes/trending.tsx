@@ -5,13 +5,13 @@ import type { Handle } from '~/types/handle';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 
 export const meta = mergeMeta(() => [
-  { title: 'watchparty - Trending' },
+  { title: 'twinkl - Trending' },
   { name: 'keywords', content: 'trending, trending movies, trending tv shows, trending anime' },
-  { property: 'og:url', content: 'https://watchparty.web.app/trending/' },
-  { property: 'og:title', content: 'watchparty - Trending' },
+  { property: 'og:url', content: 'https://twinkl.web.app/trending/' },
+  { property: 'og:title', content: 'twinkl - Trending' },
   { name: 'description', content: 'Trending' },
   { property: 'og:description', content: 'Trending' },
-  { name: 'twitter:title', content: 'watchparty - Trending' },
+  { name: 'twitter:title', content: 'twinkl - Trending' },
   { name: 'twitter:description', content: 'Trending' },
 ]);
 

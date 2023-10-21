@@ -14,13 +14,13 @@ import { useTypedRouteLoaderData } from '~/hooks/useTypedRouteLoaderData';
 import MediaList from '~/components/media/MediaList';
 
 export const meta = mergeMeta(() => [
-  { title: 'watchparty - Tv Shows' },
-  { name: 'description', content: 'Discover tv shows in watchparty' },
-  { property: 'og:url', content: 'https://watchparty.web.app/tv-shows/' },
-  { property: 'og:title', content: 'watchparty - Tv Shows' },
-  { property: 'og:description', content: 'Discover tv shows in watchparty' },
-  { name: 'twitter:title', content: 'watchparty - Tv Shows' },
-  { name: 'twitter:description', content: 'Discover tv shows in watchparty' },
+  { title: 'twinkl - Tv Shows' },
+  { name: 'description', content: 'Discover tv shows in twinkl' },
+  { property: 'og:url', content: 'https://twinkl.web.app/tv-shows/' },
+  { property: 'og:title', content: 'twinkl - Tv Shows' },
+  { property: 'og:description', content: 'Discover tv shows in twinkl' },
+  { name: 'twitter:title', content: 'twinkl - Tv Shows' },
+  { name: 'twitter:description', content: 'Discover tv shows in twinkl' },
 ]);
 
 export const loader = async ({ request }: LoaderArgs) => {

@@ -16,12 +16,12 @@ import MediaList from '~/components/media/MediaList';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 
 export const meta = mergeMeta(() => [
-  { title: 'watchparty - Airing Today Tv Shows' },
+  { title: 'twinkl - Airing Today Tv Shows' },
   { name: 'description', content: 'Airing Today Tv Shows' },
-  { property: 'og:url', content: 'https://watchparty.web.app/tv-shows/airing-today' },
-  { property: 'og:title', content: 'watchparty - Airing Today Tv Shows' },
+  { property: 'og:url', content: 'https://twinkl.web.app/tv-shows/airing-today' },
+  { property: 'og:title', content: 'twinkl - Airing Today Tv Shows' },
   { property: 'og:description', content: 'Airing Today Tv Shows' },
-  { name: 'twitter:title', content: 'watchparty - Airing Today Tv Shows' },
+  { name: 'twitter:title', content: 'twinkl - Airing Today Tv Shows' },
   { name: 'twitter:description', content: 'Airing Today Tv Shows' },
 ]);
 

@@ -31,13 +31,13 @@ export const meta = mergeMeta<typeof loader, { 'routes/movies+/$movieId': typeof
     const { title } = detail || {};
     const movieTitle = title || '';
     return [
-      { title: `watchparty - ${movieTitle} - Photos` },
+      { title: `twinkl - ${movieTitle} - Photos` },
       {
         property: 'og:url',
-        content: `https://watchparty.web.app/movies/${params.movieId}/photos`,
+        content: `https://twinkl.web.app/movies/${params.movieId}/photos`,
       },
-      { property: 'og:title', content: `watchparty - ${movieTitle} - Photos` },
-      { name: 'twitter:title', content: `watchparty - ${movieTitle} - Photos` },
+      { property: 'og:title', content: `twinkl - ${movieTitle} - Photos` },
+      { name: 'twitter:title', content: `twinkl - ${movieTitle} - Photos` },
     ];
   },
 );

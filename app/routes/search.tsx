@@ -6,15 +6,15 @@ import { searchPages } from '~/constants/tabLinks';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 
 export const meta = mergeMeta(() => [
-  { title: 'watchparty - Search' },
-  { name: 'description', content: 'Search Movies, Tv Series and Anime on watchparty' },
-  { property: 'og:url', content: 'https://watchparty.web.app/search' },
-  { property: 'og:title', content: 'watchparty - Search' },
-  { property: 'og:image', content: 'https://watchparty.web.app/api/ogimage?it=search' },
-  { property: 'og:description', content: 'Search Movies, Tv Series and Anime on watchparty' },
-  { name: 'twitter:title', content: 'watchparty - Search' },
-  { name: 'twitter:image', content: 'https://watchparty.web.app/api/ogimage?it=search' },
-  { name: 'twitter:description', content: 'Search Movies, Tv Series and Anime on watchparty' },
+  { title: 'twinkl - Search' },
+  { name: 'description', content: 'Search Movies, Tv Series and Anime on twinkl' },
+  { property: 'og:url', content: 'https://twinkl.web.app/search' },
+  { property: 'og:title', content: 'twinkl - Search' },
+  { property: 'og:image', content: 'https://twinkl.web.app/api/ogimage?it=search' },
+  { property: 'og:description', content: 'Search Movies, Tv Series and Anime on twinkl' },
+  { name: 'twitter:title', content: 'twinkl - Search' },
+  { name: 'twitter:image', content: 'https://twinkl.web.app/api/ogimage?it=search' },
+  { name: 'twitter:description', content: 'Search Movies, Tv Series and Anime on twinkl' },
 ]);
 
 export const handle: Handle = {

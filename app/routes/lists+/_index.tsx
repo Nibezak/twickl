@@ -14,10 +14,10 @@ import MediaList from '~/components/media/MediaList';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 
 export const meta = mergeMeta(() => [
-  { title: 'watchparty - Featured Lists' },
-  { property: 'og:url', content: 'https://watchparty.web.app/lists/' },
-  { property: 'og:title', content: 'watchparty - Featured Lists' },
-  { name: 'twitter:title', content: 'watchparty - Featured Lists' },
+  { title: 'twinkl - Featured Lists' },
+  { property: 'og:url', content: 'https://twinkl.web.app/lists/' },
+  { property: 'og:title', content: 'twinkl - Featured Lists' },
+  { name: 'twitter:title', content: 'twinkl - Featured Lists' },
 ]);
 
 export const handle: Handle = {

@@ -26,16 +26,16 @@ export const meta = mergeMeta<typeof loader>(({ data, params }) => {
   }
   const { detail } = data;
   return [
-    { title: `watchparty - ${detail?.name || ''}` },
+    { title: `twinkl - ${detail?.name || ''}` },
     { name: 'description', content: `${detail?.description || ''}` },
     { name: 'keywords', content: `${detail?.name || ''}` },
     {
       property: 'og:url',
-      content: `https://watchparty.web.app/lists/${params.listId}`,
+      content: `https://twinkl.web.app/lists/${params.listId}`,
     },
-    { property: 'og:title', content: `watchparty - ${detail?.name || ''}` },
+    { property: 'og:title', content: `twinkl - ${detail?.name || ''}` },
     { property: 'og:description', content: `${detail?.description || ''}` },
-    { name: 'twitter:title', content: `watchparty - ${detail?.name || ''}` },
+    { name: 'twitter:title', content: `twinkl - ${detail?.name || ''}` },
     { name: 'twitter:description', content: `${detail?.description || ''}` },
   ];
 });

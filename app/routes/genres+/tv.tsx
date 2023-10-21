@@ -12,15 +12,15 @@ import { useTypedRouteLoaderData } from '~/hooks/useTypedRouteLoaderData';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 
 export const meta = mergeMeta(() => [
-  { title: 'watchparty Tv shows - Genres' },
+  { title: 'twinkl Tv shows - Genres' },
   { name: 'description', content: 'Tv shows Genres' },
-  { property: 'og:url', content: 'https://watchparty.web.app/genres/tv' },
-  { property: 'og:title', content: 'watchparty Tv shows - Genres' },
-  { property: 'og:image', content: 'https://watchparty.web.app/api/ogimage?it=tvshows' },
+  { property: 'og:url', content: 'https://twinkl.web.app/genres/tv' },
+  { property: 'og:title', content: 'twinkl Tv shows - Genres' },
+  { property: 'og:image', content: 'https://twinkl.web.app/api/ogimage?it=tvshows' },
   { property: 'og:description', content: 'Tv shows Genres' },
-  { name: 'twitter:title', content: 'watchparty Tv shows - Genres' },
+  { name: 'twitter:title', content: 'twinkl Tv shows - Genres' },
   { name: 'twitter:description', content: 'Tv shows Genres' },
-  { name: 'twitter:image', content: 'https://watchparty.web.app/api/ogimage?it=tvshows' },
+  { name: 'twitter:image', content: 'https://twinkl.web.app/api/ogimage?it=tvshows' },
 ]);
 
 export const handle: Handle = {

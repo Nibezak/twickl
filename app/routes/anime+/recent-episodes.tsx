@@ -15,12 +15,12 @@ import MediaList from '~/components/media/MediaList';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 
 export const meta = mergeMeta(() => [
-  { title: 'watchparty - Recent Anime Episodes' },
+  { title: 'twinkl - Recent Anime Episodes' },
   { name: 'description', content: 'Recent Anime Episodes' },
-  { property: 'og:url', content: 'https://watchparty.web.app/anime/recent-episodes' },
-  { property: 'og:title', content: 'watchparty - Recent Anime Episodes' },
+  { property: 'og:url', content: 'https://twinkl.web.app/anime/recent-episodes' },
+  { property: 'og:title', content: 'twinkl - Recent Anime Episodes' },
   { property: 'og:description', content: 'Recent Anime Episodes' },
-  { name: 'twitter:title', content: 'watchparty - Recent Anime Episodes' },
+  { name: 'twitter:title', content: 'twinkl - Recent Anime Episodes' },
   { name: 'twitter:description', content: 'Recent Anime Episodes' },
 ]);
 

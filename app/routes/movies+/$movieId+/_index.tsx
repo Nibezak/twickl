@@ -60,13 +60,13 @@ export const meta = mergeMeta<typeof loader, { 'routes/movies+/$movieId': typeof
     const { detail } = movieData;
     const { title } = detail || {};
     return [
-      { title: `watchparty - ${title}` },
-      { property: 'og:title', content: `watchparty - ${title}` },
+      { title: `twinkl - ${title}` },
+      { property: 'og:title', content: `twinkl - ${title}` },
       {
         property: 'og:url',
-        content: `https://watchparty.web.app/movies/${params.movieId}/`,
+        content: `https://twinkl.web.app/movies/${params.movieId}/`,
       },
-      { property: 'twitter:title', content: `watchparty - ${title}` },
+      { property: 'twitter:title', content: `twinkl - ${title}` },
     ];
   },
 );

@@ -40,7 +40,7 @@ export const meta = mergeMeta<typeof loader>(({ data, params }) => {
   const { title, overview } = detail || {};
   const movieTitle = title || '';
   return [
-    { title: `watchparty - Watch ${movieTitle}` },
+    { title: `twinkl - Watch ${movieTitle}` },
     { name: 'description', content: overview },
     {
       name: 'keywords',
@@ -48,19 +48,19 @@ export const meta = mergeMeta<typeof loader>(({ data, params }) => {
     },
     {
       property: 'og:url',
-      content: `https://watchparty.web.app/movies/${params.movieId}/watch`,
+      content: `https://twinkl.web.app/movies/${params.movieId}/watch`,
     },
-    { property: 'og:title', content: `watchparty - Watch ${movieTitle}` },
+    { property: 'og:title', content: `twinkl - Watch ${movieTitle}` },
     { property: 'og:description', content: overview },
     {
       property: 'og:image',
-      content: `https://watchparty.web.app/api/ogimage?m=${params.movieId}&mt=movie`,
+      content: `https://twinkl.web.app/api/ogimage?m=${params.movieId}&mt=movie`,
     },
-    { name: 'twitter:title', content: `watchparty - Watch ${movieTitle}` },
+    { name: 'twitter:title', content: `twinkl - Watch ${movieTitle}` },
     { name: 'twitter:description', content: overview },
     {
       name: 'twitter:image',
-      content: `https://watchparty.web.app/api/ogimage?m=${params.movieId}&mt=movie`,
+      content: `https://twinkl.web.app/api/ogimage?m=${params.movieId}&mt=movie`,
     },
   ];
 });

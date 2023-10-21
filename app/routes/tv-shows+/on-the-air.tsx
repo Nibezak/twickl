@@ -17,12 +17,12 @@ import MediaList from '~/components/media/MediaList';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 
 export const meta = mergeMeta(() => [
-  { title: 'watchparty - On air Tv Shows' },
+  { title: 'twinkl - On air Tv Shows' },
   { name: 'description', content: 'On air Tv Shows' },
-  { property: 'og:url', content: 'https://watchparty.web.app/tv-shows/on-the-air' },
-  { property: 'og:title', content: 'watchparty - On air Tv Shows' },
+  { property: 'og:url', content: 'https://twinkl.web.app/tv-shows/on-the-air' },
+  { property: 'og:title', content: 'twinkl - On air Tv Shows' },
   { property: 'og:description', content: 'On air Tv Shows' },
-  { name: 'twitter:title', content: 'watchparty - On air Tv Shows' },
+  { name: 'twitter:title', content: 'twinkl - On air Tv Shows' },
   { name: 'twitter:description', content: 'On air Tv Shows' },
 ]);
 

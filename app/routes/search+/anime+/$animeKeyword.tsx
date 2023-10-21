@@ -36,16 +36,16 @@ export const loader = async ({ request, params }: LoaderArgs) => {
 export const meta = mergeMeta(({ data, params }) => {
   const { searchResults } = data;
   return [
-    { title: `watchparty - Search results for ${params.animeKeyword}` },
+    { title: `twinkl - Search results for ${params.animeKeyword}` },
     {
       name: 'keywords',
       content: `Watch ${params.animeKeyword}, Stream ${params.animeKeyword}, Watch ${params.animeKeyword} HD, Online ${params.animeKeyword}, Streaming ${params.animeKeyword}, English, Subtitle ${params.animeKeyword}, English Subtitle`,
     },
     {
       property: 'og:url',
-      content: `https://watchparty.web.app/search/anime/${params.animeKeyword}`,
+      content: `https://twinkl.web.app/search/anime/${params.animeKeyword}`,
     },
-    { property: 'og:title', content: `watchparty - Search results for ${params.animeKeyword}` },
+    { property: 'og:title', content: `twinkl - Search results for ${params.animeKeyword}` },
     {
       property: 'og:image',
       content: searchResults?.results[0]?.cover || searchResults?.results[0]?.image || '',
@@ -54,7 +54,7 @@ export const meta = mergeMeta(({ data, params }) => {
       name: 'twitter:image',
       content: searchResults?.results[0]?.cover || searchResults?.results[0]?.image || '',
     },
-    { name: 'twitter:title', content: `watchparty - Search results for ${params.animeKeyword}` },
+    { name: 'twitter:title', content: `twinkl - Search results for ${params.animeKeyword}` },
   ];
 });
 

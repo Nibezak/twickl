@@ -4,7 +4,7 @@
 <br />
 <div align="center">
 
-<h2 align="center">watchparty</h2>
+<h2 align="center">twinkl</h2>
   <p align="center">
     A web app for exploring, watching movies, tv shows and anime built with Remix and NextUI.
     <br />

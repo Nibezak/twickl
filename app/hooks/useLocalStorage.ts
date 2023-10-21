@@ -1,165 +1,156 @@
 import { useLocalStorageValue } from '@react-hookz/web';
 
 function usePartySettings() {
-  const currentSubtitleFontColor = useLocalStorageValue('watchparty_settings-subtitle-font_color', {
+  const currentSubtitleFontColor = useLocalStorageValue('twinkl_settings-subtitle-font_color', {
     defaultValue: 'White',
   });
-  const currentSubtitleFontSize = useLocalStorageValue('watchparty_settings-subtitle-font_size', {
+  const currentSubtitleFontSize = useLocalStorageValue('twinkl_settings-subtitle-font_size', {
     defaultValue: '100%',
   });
   const currentSubtitleBackgroundColor = useLocalStorageValue(
-    'watchparty_settings-subtitle-background_color',
+    'twinkl_settings-subtitle-background_color',
     {
       defaultValue: 'Black',
     },
   );
   const currentSubtitleBackgroundOpacity = useLocalStorageValue(
-    'watchparty_settings-subtitle-background_opacity',
+    'twinkl_settings-subtitle-background_opacity',
     {
       defaultValue: '0%',
     },
   );
-  const currentSubtitleWindowColor = useLocalStorageValue(
-    'watchparty_settings-subtitle-window_color',
-    {
-      defaultValue: 'Black',
-    },
-  );
+  const currentSubtitleWindowColor = useLocalStorageValue('twinkl_settings-subtitle-window_color', {
+    defaultValue: 'Black',
+  });
   const currentSubtitleWindowOpacity = useLocalStorageValue(
-    'watchparty_settings-subtitle-window_opacity',
+    'twinkl_settings-subtitle-window_opacity',
     {
       defaultValue: '0%',
     },
   );
-  const currentSubtitleTextEffects = useLocalStorageValue(
-    'watchparty_settings-subtitle-text_effect',
-    {
-      defaultValue: 'Outline',
-    },
-  );
-  const autoShowSubtitle = useLocalStorageValue('watchparty_settings-subtitle-auto_show', {
+  const currentSubtitleTextEffects = useLocalStorageValue('twinkl_settings-subtitle-text_effect', {
+    defaultValue: 'Outline',
+  });
+  const autoShowSubtitle = useLocalStorageValue('twinkl_settings-subtitle-auto_show', {
     defaultValue: false,
   });
-  // const showFilter = useLocalStorageValue('watchparty_settings-layout-show-filter', {
+  // const showFilter = useLocalStorageValue('twinkl_settings-layout-show-filter', {
   //   defaultValue: false,
   //   initializeWithValue: false,
   // });
-  const isMutedTrailer = useLocalStorageValue('watchparty_settings-list-mute_trailer', {
+  const isMutedTrailer = useLocalStorageValue('twinkl_settings-list-mute_trailer', {
     defaultValue: false,
     initializeWithValue: true,
   });
-  const isPlayTrailer = useLocalStorageValue('watchparty_settings-list-play_trailer', {
+  const isPlayTrailer = useLocalStorageValue('twinkl_settings-list-play_trailer', {
     defaultValue: true,
     initializeWithValue: false,
   });
-  const isFetchLogo = useLocalStorageValue('watchparty_settings-list-fetch_logo', {
+  const isFetchLogo = useLocalStorageValue('twinkl_settings-list-fetch_logo', {
     defaultValue: false,
   });
-  const isShowSpotlight = useLocalStorageValue('watchparty_settings-list-show_spotlight', {
+  const isShowSpotlight = useLocalStorageValue('twinkl_settings-list-show_spotlight', {
     defaultValue: false,
   });
-  const isAutoSize = useLocalStorageValue('watchparty_settings-player-auto_size', {
+  const isAutoSize = useLocalStorageValue('twinkl_settings-player-auto_size', {
     defaultValue: false,
   });
-  const isPicInPic = useLocalStorageValue('watchparty_settings-player-pic_in_pic', {
+  const isPicInPic = useLocalStorageValue('twinkl_settings-player-pic_in_pic', {
     defaultValue: true,
   });
-  const isMuted = useLocalStorageValue('watchparty_settings-player-mute', {
+  const isMuted = useLocalStorageValue('twinkl_settings-player-mute', {
     defaultValue: false,
   });
-  const isAutoPlay = useLocalStorageValue('watchparty_settings-player-auto_play', {
+  const isAutoPlay = useLocalStorageValue('twinkl_settings-player-auto_play', {
     defaultValue: false,
   });
-  const isAutoMini = useLocalStorageValue('watchparty_settings-player-auto_mini', {
+  const isAutoMini = useLocalStorageValue('twinkl_settings-player-auto_mini', {
     defaultValue: false,
   });
-  const isLoop = useLocalStorageValue('watchparty_settings-player-loop', {
+  const isLoop = useLocalStorageValue('twinkl_settings-player-loop', {
     defaultValue: false,
   });
-  const isScreenshot = useLocalStorageValue('watchparty_settings-player-screenshot', {
+  const isScreenshot = useLocalStorageValue('twinkl_settings-player-screenshot', {
     defaultValue: true,
   });
-  const isMiniProgressBar = useLocalStorageValue('watchparty_settings-player-mini_progress_bar', {
+  const isMiniProgressBar = useLocalStorageValue('twinkl_settings-player-mini_progress_bar', {
     defaultValue: true,
   });
-  const isAutoPlayback = useLocalStorageValue('watchparty_settings-player-auto_playback', {
+  const isAutoPlayback = useLocalStorageValue('twinkl_settings-player-auto_playback', {
     defaultValue: true,
   });
   const isAutoPlayNextEpisode = useLocalStorageValue(
-    'watchparty_settings-player-auto_play_next_episode',
+    'twinkl_settings-player-auto_play_next_episode',
     {
       defaultValue: true,
     },
   );
   const isShowSkipOpEdButton = useLocalStorageValue(
-    'watchparty_settings-player-show_skip_op_ed_button',
+    'twinkl_settings-player-show_skip_op_ed_button',
     {
       defaultValue: true,
     },
   );
-  const isAutoSkipOpEd = useLocalStorageValue('watchparty_settings-player-auto_skip_op_ed', {
+  const isAutoSkipOpEd = useLocalStorageValue('twinkl_settings-player-auto_skip_op_ed', {
     defaultValue: false,
   });
-  const isFastForward = useLocalStorageValue('watchparty_settings-player-fast_forward', {
+  const isFastForward = useLocalStorageValue('twinkl_settings-player-fast_forward', {
     defaultValue: true,
   });
-  // const isSwipeFullscreen = useLocalStorageValue('watchparty_settings_player-gestures_swipe-fullscreen', {
+  // const isSwipeFullscreen = useLocalStorageValue('twinkl_settings_player-gestures_swipe-fullscreen', {
   //   defaultValue: false,
   // });
-  const sidebarStyleMode = useLocalStorageValue('watchparty_settings-layout-sidebar-style_mode', {
+  const sidebarStyleMode = useLocalStorageValue('twinkl_settings-layout-sidebar-style_mode', {
     defaultValue: 'rounded-all',
   });
-  const sidebarMiniMode = useLocalStorageValue('watchparty_settings-layout-sidebar-mini_mode', {
-    defaultValue: true,
-    initializeWithValue: false,
-  });
-  const sidebarHoverMode = useLocalStorageValue('watchparty_settings-layout-sidebar-hover_mode', {
+  const sidebarMiniMode = useLocalStorageValue('twinkl_settings-layout-sidebar-mini_mode', {
     defaultValue: false,
     initializeWithValue: false,
   });
-  const sidebarBoxedMode = useLocalStorageValue('watchparty_settings-layout-sidebar-boxed_mode', {
+  const sidebarHoverMode = useLocalStorageValue('twinkl_settings-layout-sidebar-hover_mode', {
     defaultValue: false,
     initializeWithValue: false,
   });
-  const sidebarSheetMode = useLocalStorageValue('watchparty_settings-layout-sidebar-sheet_mode', {
+  const sidebarBoxedMode = useLocalStorageValue('twinkl_settings-layout-sidebar-boxed_mode', {
+    defaultValue: false,
+    initializeWithValue: false,
+  });
+  const sidebarSheetMode = useLocalStorageValue('twinkl_settings-layout-sidebar-sheet_mode', {
     defaultValue: false,
     initializeWithValue: false,
   });
   const listViewType = useLocalStorageValue<'table' | 'card' | 'detail'>(
-    'watchparty_settings-layout-list_view',
+    'twinkl_settings-layout-list_view',
     {
       defaultValue: 'card',
       initializeWithValue: false,
     },
   );
-  const listLoadingType = useLocalStorageValue('watchparty_settings-layout-list-loading_type', {
+  const listLoadingType = useLocalStorageValue('twinkl_settings-layout-list-loading_type', {
     defaultValue: 'infinite-scroll',
     initializeWithValue: false,
   });
-  const autoSwitchSubtitle = useLocalStorageValue('watchparty_settings-subtitle-auto_switch', {
+  const autoSwitchSubtitle = useLocalStorageValue('twinkl_settings-subtitle-auto_switch', {
     defaultValue: true,
   });
-  const isShowBreadcrumb = useLocalStorageValue(
-    'watchparty_settings-layout-header-show_breadcrumb',
-    {
-      defaultValue: false,
-      initializeWithValue: true,
-    },
-  );
+  const isShowBreadcrumb = useLocalStorageValue('twinkl_settings-layout-header-show_breadcrumb', {
+    defaultValue: false,
+    initializeWithValue: true,
+  });
   const isShowTopPagination = useLocalStorageValue(
-    'watchparty_settings-layout-list-show-top-pagination',
+    'twinkl_settings-layout-list-show-top-pagination',
     {
       defaultValue: false,
       initializeWithValue: false,
     },
   );
   const isLightDarkThemeOnly = useLocalStorageValue(
-    'watchparty_settings-layout-theme-light_dark_only',
+    'twinkl_settings-layout-theme-light_dark_only',
     {
       defaultValue: true,
     },
   );
-  const currentThemeColor = useLocalStorageValue('watchparty_settings-layout-theme-color', {
+  const currentThemeColor = useLocalStorageValue('twinkl_settings-layout-theme-color', {
     defaultValue: 'blue',
     initializeWithValue: false,
   });

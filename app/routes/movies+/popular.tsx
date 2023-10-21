@@ -16,12 +16,12 @@ import MediaList from '~/components/media/MediaList';
 import { BreadcrumbItem } from '~/components/elements/Breadcrumb';
 
 export const meta = mergeMeta(() => [
-  { title: 'watchparty - Popular Movies' },
+  { title: 'twinkl - Popular Movies' },
   { name: 'description', content: 'Popular Movies' },
-  { property: 'og:url', content: 'https://watchparty.web.app/movies/popular' },
-  { property: 'og:title', content: 'watchparty - Popular Movies' },
+  { property: 'og:url', content: 'https://twinkl.web.app/movies/popular' },
+  { property: 'og:title', content: 'twinkl - Popular Movies' },
   { property: 'og:description', content: 'Popular Movies' },
-  { name: 'twitter:title', content: 'watchparty - Popular Movies' },
+  { name: 'twitter:title', content: 'twinkl - Popular Movies' },
   { name: 'twitter:description', content: 'Popular Movies' },
 ]);
 

@@ -47,7 +47,7 @@ export const meta = mergeMeta<typeof loader>(({ data, params }) => {
   const { detail, seasonDetail } = data || {};
   return [
     {
-      title: `watchparty - Watch ${detail?.name || ''} season ${params.seasonId || ''} episode ${
+      title: `twinkl - Watch ${detail?.name || ''} season ${params.seasonId || ''} episode ${
         params.episodeId || ''
       }`,
     },
@@ -70,18 +70,18 @@ export const meta = mergeMeta<typeof loader>(({ data, params }) => {
     },
     {
       property: 'og:url',
-      content: `https://watchparty.web.app/tv-shows/${params.tvId}/season/${params.seasonId}/episode/${params.episodeId}/watch`,
+      content: `https://twinkl.web.app/tv-shows/${params.tvId}/season/${params.seasonId}/episode/${params.episodeId}/watch`,
     },
     {
       property: 'og:title',
-      content: `watchparty - Watch ${detail?.name || ''} season ${params.seasonId || ''} episode ${
+      content: `twinkl - Watch ${detail?.name || ''} season ${params.seasonId || ''} episode ${
         params.episodeId || ''
       }`,
     },
     { property: 'og:description', content: seasonDetail?.overview || detail?.overview || '' },
     {
       name: 'twitter:title',
-      content: `watchparty - Watch ${detail?.name || ''} season ${params.seasonId || ''} episode ${
+      content: `twinkl - Watch ${detail?.name || ''} season ${params.seasonId || ''} episode ${
         params.episodeId || ''
       }`,
     },

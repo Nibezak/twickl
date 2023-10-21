@@ -37,13 +37,13 @@ export const loader = async ({ request }: LoaderArgs) => {
 };
 
 export const meta = mergeMeta(() => [
-  { title: 'watchparty - Search Tv Shows' },
-  { name: 'description', content: 'Search Tv Shows on watchparty' },
-  { property: 'og:url', content: 'https://watchparty.web.app/search/tv/' },
-  { property: 'og:title', content: 'watchparty - Search Tv Shows' },
-  { property: 'og:description', content: 'Search Tv Shows on watchparty' },
-  { name: 'twitter:title', content: 'watchparty - Search Tv Shows' },
-  { name: 'twitter:description', content: 'Search Tv Shows on watchparty' },
+  { title: 'twinkl - Search Tv Shows' },
+  { name: 'description', content: 'Search Tv Shows on twinkl' },
+  { property: 'og:url', content: 'https://twinkl.web.app/search/tv/' },
+  { property: 'og:title', content: 'twinkl - Search Tv Shows' },
+  { property: 'og:description', content: 'Search Tv Shows on twinkl' },
+  { name: 'twitter:title', content: 'twinkl - Search Tv Shows' },
+  { name: 'twitter:description', content: 'Search Tv Shows on twinkl' },
 ]);
 
 export const handle: Handle = {

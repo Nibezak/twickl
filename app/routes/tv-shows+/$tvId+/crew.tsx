@@ -47,13 +47,13 @@ export const meta = mergeMeta<typeof loader, { 'routes/tv-shows+/$tvId': typeof 
     const { detail } = tvData;
     const { name } = detail || {};
     return [
-      { title: `watchparty - ${name} - Crew` },
-      { property: 'og:title', content: `watchparty - ${name} - Crew` },
+      { title: `twinkl - ${name} - Crew` },
+      { property: 'og:title', content: `twinkl - ${name} - Crew` },
       {
         property: 'og:url',
-        content: `https://watchparty.web.app/tv-shows/${params.tvId}/crew`,
+        content: `https://twinkl.web.app/tv-shows/${params.tvId}/crew`,
       },
-      { property: 'twitter:title', content: `watchparty - ${name} - Crew` },
+      { property: 'twitter:title', content: `twinkl - ${name} - Crew` },
     ];
   },
 );

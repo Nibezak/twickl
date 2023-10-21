@@ -271,13 +271,13 @@ const Settings = () => {
     isFetchLogo,
     isShowSpotlight,
   } = usePartySettings();
-  const listViewType = useLocalStorageValue('watchparty_settings-layout-list_view', {
+  const listViewType = useLocalStorageValue('twinkl_settings-layout-list_view', {
     defaultValue: 'card',
   });
-  const listLoadingType = useLocalStorageValue('watchparty_settings-layout-list-loading_type', {
+  const listLoadingType = useLocalStorageValue('twinkl_settings-layout-list-loading_type', {
     defaultValue: 'pagination',
   });
-  const currentThemeColor = useLocalStorageValue('watchparty_settings-layout-theme-color', {
+  const currentThemeColor = useLocalStorageValue('twinkl_settings-layout-theme-color', {
     defaultValue: 'blue',
   });
 
@@ -1047,7 +1047,7 @@ const Settings = () => {
                         arial-label="home-page"
                         className="bg-gradient-to-tr from-secondary to-primary to-50% bg-clip-text text-3xl font-bold tracking-normal text-transparent focus:outline-none focus:ring-2 focus:ring-focus md:text-4xl"
                       >
-                        WatchParty
+                        twinkl
                       </NavLink>
                     </div>
                     <Spacer y={1} />

@@ -11,6 +11,9 @@ module.exports = {
   // assetsBuildDirectory: "public/build",
   // serverBuildPath: "build/index.js",
   // publicPath: "/build/",
+  serverBuild: {
+    entryPoint: './app/entry.server.tsx'
+  },
 	serverModuleFormat: 'cjs',
 	future: {
 		v2_dev: true,

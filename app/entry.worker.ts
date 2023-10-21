@@ -183,7 +183,7 @@ async function handleFetch(event: FetchEvent): Promise<Response> {
 
 const handlePush = async (event: PushEvent) => {
   const data = JSON.parse(event?.data!.text());
-  const title = data.title ? data.title : 'Watchparty PWA';
+  const title = data.title ? data.title : 'twinkl PWA';
 
   const options = {
     body: data.body ? data.body : 'Notification Body Text',
@@ -199,26 +199,22 @@ const handlePush = async (event: PushEvent) => {
   });
 };
 
-// self.addEventListener('install', (event) => {
-//   event.waitUntil(handleInstall(event).then(() => self.skipWaiting()));
-// });
+self.addEventListener('install', (event) => {
+  event.waitUntil(handleInstall(event).then(() => self.skipWaiting()));
+});
 
-// self.addEventListener('activate', (event) => {
-//   event.waitUntil(handleActivate(event).then(() => self.clients.claim()));
-// });
+self.addEventListener('activate', (event) => {
+  event.waitUntil(handleActivate(event).then(() => self.clients.claim()));
+});
 
 self.addEventListener('message', (event) => {
   event.waitUntil(handleMessage(event));
 });
 
 self.addEventListener('push', (event) => {
-  // self.clients.matchAll().then(function (c) {
-  // if (c.length === 0) {
-  event.waitUntil(handlePush(event));
-  // } else {
-  //   console.log("Application is already open!");
-  // }
-  // });
+  self.clients.matchAll().then(function (c) {
+    event.waitUntil(handlePush(event));
+  });
 });
 
 self.addEventListener('fetch', (event) => {

@@ -21,13 +21,13 @@ type ActionData = {
 };
 
 export const meta = mergeMeta(() => [
-  { title: 'watchparty - Sign Up' },
-  { name: 'description', content: 'Sign up for a watchparty account.' },
-  { property: 'og:title', content: 'watchparty - Sign Up' },
-  { property: 'og:description', content: 'Sign up for a watchparty account.' },
-  { property: 'og:url', content: 'https://watchparty.web.app/sign-up' },
-  { property: 'twitter:title', content: 'watchparty - Sign Up' },
-  { property: 'twitter:description', content: 'Sign up for a watchparty account.' },
+  { title: 'twinkl - Sign Up' },
+  { name: 'description', content: 'Sign up for a twinkl account.' },
+  { property: 'og:title', content: 'twinkl - Sign Up' },
+  { property: 'og:description', content: 'Sign up for a twinkl account.' },
+  { property: 'og:url', content: 'https://twinkl.web.app/sign-up' },
+  { property: 'twitter:title', content: 'twinkl - Sign Up' },
+  { property: 'twitter:description', content: 'Sign up for a twinkl account.' },
 ]);
 
 export const action = async ({ request }: ActionArgs) => {
@@ -121,7 +121,7 @@ export const action = async ({ request }: ActionArgs) => {
     {
       type: 'success',
       title: 'Sign Up Successfully',
-      description: 'Welcome to watchparty!',
+      description: 'Welcome to Twinkl!',
     },
     { headers: { 'Set-Cookie': await commitAuthCookie(authCookie) } },
   );

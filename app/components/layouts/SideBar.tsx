@@ -170,7 +170,7 @@ const SideBar = () => {
               arial-label="home-page"
               className="bg-gradient-to-tr from-secondary to-primary to-50% bg-clip-text text-xl font-bold tracking-normal text-transparent focus:outline-none focus:ring-2 focus:ring-focus md:text-xl"
             >
-              WatchParty
+              Twinkl
             </NavLink>
           </div>
         )}
