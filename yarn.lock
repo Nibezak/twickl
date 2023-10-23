@@ -1708,6 +1708,18 @@
   dependencies:
     lottie-web "^5.10.2"
 
+"@netlify/remix-edge-adapter@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@netlify/remix-edge-adapter/-/remix-edge-adapter-3.0.0.tgz#46bbfbe59617885e17254bed5ac504c903e9ded6"
+  integrity sha512-8PRuButGIT+65C2IrFHgPRNAXT/dyk3WrlXfX6LHXmTb21gwEZ2NUcd6EfsWJIN9S4hop1gkJLMP7R/mdj+Q0g==
+  dependencies:
+    "@netlify/remix-runtime" "2.0.0"
+
+"@netlify/remix-runtime@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@netlify/remix-runtime/-/remix-runtime-2.0.0.tgz#aeebb237d961f6274bfe7558c0542e19f5d4ef25"
+  integrity sha512-stn4RDk2/S7XwNGCq2YPAszD5i7z3SiYgsHJxPdJ3d86pz8hz5kjx6qPUPuW+K8kzRS3Q0q7Jhmw6CYw5BFnbA==
+
 "@next-boost/hybrid-disk-cache@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@next-boost/hybrid-disk-cache/-/hybrid-disk-cache-0.3.0.tgz#39830e733a118440545d855bc4daef5096bda9fc"
