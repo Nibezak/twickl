@@ -5,10 +5,11 @@
   "license": "GPL-3.0",
   "scripts": {
     "build": "remix build",
+    "dev": "remix dev --manual",
+    "start": "remix-serve ./build/index.js",
     "build:remix": "cross-env NODE_ENV=production remix build",
     "build:worker": "esbuild ./app/entry.worker.ts --outfile=./public/entry.worker.js --minify --bundle --format=esm --define:process.env.NODE_ENV='\"production\"'",
     "cleanup": "rimraf .cache ./public/build ./public/entry.worker.js ./build",
-    "dev": "run-p \"dev:*\"",
     "dev:remix": "cross-env NODE_ENV=development remix dev",
     "dev:worker": "esbuild ./app/entry.worker.ts --outfile=./public/entry.worker.js --bundle --format=esm --define:process.env.NODE_ENV='\"development\"' --watch",
     "format-code": "pnpm run prettier:fix & pnpm run lint:fix",
@@ -19,7 +20,6 @@
     "prepare": "husky install",
     "prettier": "prettier app --check",
     "prettier:fix": "prettier app --write",
-    "start": "dotenv -e .env remix-serve build",
     "typecheck": "tsc"
   },
   "dependencies": {
