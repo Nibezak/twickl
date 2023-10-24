@@ -17,6 +17,9 @@ dependencies:
   '@lottiefiles/react-lottie-player':
     specifier: ^3.5.3
     version: 3.5.3(react@18.3.0-canary-41f0e9dae-20230907)
+  '@netlify/remix-edge-adapter':
+    specifier: ^3.0.0
+    version: 3.0.0(@remix-run/server-runtime@1.19.3)
   '@next-boost/hybrid-disk-cache':
     specifier: ^0.3.0
     version: 0.3.0
@@ -2484,6 +2487,22 @@ packages:
     dependencies:
       lottie-web: 5.12.2
       react: 18.3.0-canary-41f0e9dae-20230907
+    dev: false
+
+  /@netlify/remix-edge-adapter@3.0.0(@remix-run/server-runtime@1.19.3):
+    resolution: {integrity: sha512-8PRuButGIT+65C2IrFHgPRNAXT/dyk3WrlXfX6LHXmTb21gwEZ2NUcd6EfsWJIN9S4hop1gkJLMP7R/mdj+Q0g==}
+    dependencies:
+      '@netlify/remix-runtime': 2.0.0(@remix-run/server-runtime@1.19.3)
+    transitivePeerDependencies:
+      - '@remix-run/server-runtime'
+    dev: false
+
+  /@netlify/remix-runtime@2.0.0(@remix-run/server-runtime@1.19.3):
+    resolution: {integrity: sha512-stn4RDk2/S7XwNGCq2YPAszD5i7z3SiYgsHJxPdJ3d86pz8hz5kjx6qPUPuW+K8kzRS3Q0q7Jhmw6CYw5BFnbA==}
+    peerDependencies:
+      '@remix-run/server-runtime': ^2.0.0
+    dependencies:
+      '@remix-run/server-runtime': 1.19.3
     dev: false
 
   /@next-boost/hybrid-disk-cache@0.3.0:
