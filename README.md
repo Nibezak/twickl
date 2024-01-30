@@ -73,6 +73,6 @@ pnpm dev
 
 ## License
 
-Distributed under the MIT License. See [LICENSE.txt]
+Distributed under the GPL-3.0 license . See [LICENSE.txt]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
